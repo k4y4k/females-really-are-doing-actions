@@ -19,6 +19,7 @@ steps:
     image: node:16
     commands:
       - yarn
+      - yarn cypress install --force
 
   - name: Integration tests
     image: node:16
@@ -52,6 +53,7 @@ steps:
     image: node:16
     commands:
       - yarn
+      - yarn cypress install --force
 
   - name: build
     image: node:16
