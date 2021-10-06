@@ -1,7 +1,42 @@
 ---
 kind: pipeline
 type: docker
-name: default
+name: Cypress (Electron)
+
+# TODO: test in Chrome, Electron and Firefox
+
+trigger:
+  branch:
+    exclude:
+      - gh-pages
+      - github-pages
+      - staging.tmp
+      - trying.tmp
+      - staging-squash-merge.tmp
+
+steps:
+  - name: install
+    image: node:16
+    commands:
+      - yarn
+
+  - name: Integration tests
+    image: node:16
+    commands:
+      - yarn test:cy
+
+  - name: Component tests
+    image: node:16
+    commands:
+      - yarn test:cy:ct
+
+---
+kind: pipeline
+type: docker
+name: build
+
+depends_on:
+  - Cypress (Electron)
 
 trigger:
   branch:
@@ -22,3 +57,32 @@ steps:
     image: node:16
     commands:
       - yarn build
+
+---
+kind: pipeline
+type: docker
+name: discord
+
+depends_on:
+  - build
+
+clone:
+  disable: true
+
+trigger:
+  status:
+    - failure
+    - success
+
+steps:
+  - name: discord
+    image: appleboy/drone-discord
+    settings:
+      webhook_id:
+        from_secret: discord_webhook_id
+      webhook_token:
+        from_secret: discord_webhook_token
+    when:
+      status:
+        - success
+        - failure
