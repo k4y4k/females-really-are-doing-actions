@@ -16,18 +16,18 @@ trigger:
 
 steps:
   - name: install
-    image: node:16
+    image: cypress/included:8.5.0
     commands:
       - yarn
       - yarn cypress install --force
 
   - name: Integration tests
-    image: node:16
+    image: cypress/included:8.5.0
     commands:
       - yarn test:cy
 
   - name: Component tests
-    image: node:16
+    image: cypress/included:8.5.0
     commands:
       - yarn test:cy:ct
 
