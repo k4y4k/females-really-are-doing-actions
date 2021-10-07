@@ -24,6 +24,7 @@ steps:
       - yarn lint:prettier:check
       - yarn lint:eslint:check
       - yarn lint:stylelint:check
+      - yarn lint:types
 
 ---
 kind: pipeline
@@ -46,7 +47,6 @@ steps:
     image: cypress/included:8.5.0
     commands:
       - yarn
-      # - yarn cypress install --force
 
   - name: Integration tests
     image: cypress/included:8.5.0
