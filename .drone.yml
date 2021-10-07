@@ -31,8 +31,6 @@ kind: pipeline
 type: docker
 name: Cypress (Electron)
 
-# TODO: test in Chrome, Electron and Firefox
-
 trigger:
   branch:
     exclude:
@@ -61,10 +59,72 @@ steps:
 ---
 kind: pipeline
 type: docker
+name: Cypress (Firefox)
+
+trigger:
+  branch:
+    exclude:
+      - gh-pages
+      - github-pages
+      - staging.tmp
+      - trying.tmp
+      - staging-squash-merge.tmp
+
+steps:
+  - name: install
+    image: cypress/included:8.5.0
+    commands:
+      - yarn
+
+  - name: Integration tests
+    image: cypress/included:8.5.0
+    commands:
+      - yarn test:cy --browser firefox
+
+  - name: Component tests
+    image: cypress/included:8.5.0
+    commands:
+      - yarn test:cy:ct --browser firefox
+
+---
+kind: pipeline
+type: docker
+name: Cypress (Chrome)
+
+trigger:
+  branch:
+    exclude:
+      - gh-pages
+      - github-pages
+      - staging.tmp
+      - trying.tmp
+      - staging-squash-merge.tmp
+
+steps:
+  - name: install
+    image: cypress/included:8.5.0
+    commands:
+      - yarn
+
+  - name: Integration tests
+    image: cypress/included:8.5.0
+    commands:
+      - yarn test:cy --browser chrome
+
+  - name: Component tests
+    image: cypress/included:8.5.0
+    commands:
+      - yarn test:cy:ct --browser chrome
+
+---
+kind: pipeline
+type: docker
 name: build
 
 depends_on:
   - Cypress (Electron)
+  - Cypress (Chrome)
+  - Cypress (Firefox)
   - Preflight
 
 trigger:
