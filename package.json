@@ -12,19 +12,31 @@
     "start": "vite",
     "test:boot": "yarn build && yarn serve",
     "test:cy": "start-server-and-test test:boot http://localhost:5000 cy:run",
-    "test:cy:ct": "start-server-and-test test:boot http://localhost:5000 cy:ct"
+    "test:cy:ct": "start-server-and-test test:boot http://localhost:5000 cy:ct",
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook"
   },
   "dependencies": {
     "vue": "^3.2.16"
   },
   "devDependencies": {
+    "@babel/core": "^7.15.8",
     "@cypress/vite-dev-server": "^2.1.1",
     "@cypress/vue": "3",
+    "@mdx-js/react": "^1.6.22",
+    "@storybook/addon-actions": "^6.4.0-beta.5",
+    "@storybook/addon-docs": "^6.4.0-beta.5",
+    "@storybook/addon-essentials": "^6.4.0-beta.5",
+    "@storybook/addon-links": "^6.4.0-beta.5",
+    "@storybook/vue3": "^6.4.0-beta.5",
     "@vitejs/plugin-vue": "^1.9.2",
+    "babel-loader": "^8.2.2",
     "cypress": "^8.5.0",
     "start-server-and-test": "^1.14.0",
+    "storybook-builder-vite": "^0.1.0",
     "typescript": "^4.4.3",
     "vite": "^2.6.0",
+    "vue-loader": "^16.8.1",
     "vue-tsc": "^0.3.0"
   },
   "packageManager": "yarn@3.0.2"
