@@ -46,7 +46,7 @@ steps:
     image: cypress/included:8.5.0
     commands:
       - yarn
-      - yarn cypress install --force
+      # - yarn cypress install --force
 
   - name: Integration tests
     image: cypress/included:8.5.0
