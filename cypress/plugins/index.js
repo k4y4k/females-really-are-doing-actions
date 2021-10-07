@@ -1,3 +1,5 @@
+/* eslint-disable */
+
 const path = require('path')
 const { startDevServer } = require('@cypress/vite-dev-server')
 

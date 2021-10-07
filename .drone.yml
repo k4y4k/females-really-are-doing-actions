@@ -1,6 +1,32 @@
 ---
 kind: pipeline
 type: docker
+name: Preflight
+
+trigger:
+  branch:
+    exclude:
+      - gh-pages
+      - github-pages
+      - staging.tmp
+      - trying.tmp
+      - staging-squash-merge.tmp
+
+steps:
+  - name: install
+    image: node:16
+    commands:
+      - yarn
+
+  - name: preflight
+    image: node:16
+    commands:
+      - yarn prettier . --check
+      - yarn lint:check
+
+---
+kind: pipeline
+type: docker
 name: Cypress (Electron)
 
 # TODO: test in Chrome, Electron and Firefox
@@ -38,6 +64,7 @@ name: build
 
 depends_on:
   - Cypress (Electron)
+  - Preflight
 
 trigger:
   branch:

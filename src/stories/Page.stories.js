@@ -1,3 +1,5 @@
+/* eslint-disable @typescript-eslint/no-unsafe-member-access */
+/* eslint-disable @typescript-eslint/no-unsafe-assignment */
 import MyPage from './Page.vue'
 import * as HeaderStories from './Header.stories'
 

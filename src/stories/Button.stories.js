@@ -1,3 +1,5 @@
+/* eslint-disable @typescript-eslint/no-unsafe-assignment */
+
 import MyButton from './Button.vue'
 
 // More on default export: https://storybook.js.org/docs/vue/writing-stories/introduction#default-export
