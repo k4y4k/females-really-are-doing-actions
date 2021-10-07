@@ -21,8 +21,9 @@ steps:
   - name: preflight
     image: node:16
     commands:
-      - yarn prettier . --check
-      - yarn lint:check
+      - yarn lint:prettier:check
+      - yarn lint:eslint:check
+      - yarn lint:stylelint:check
 
 ---
 kind: pipeline
