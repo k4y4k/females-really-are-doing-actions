@@ -21,7 +21,7 @@
     "test:boot": "yarn build && yarn serve",
     "test:cy": "start-server-and-test test:boot http://localhost:5000 cy:run",
     "test:cy:ct": "start-server-and-test test:boot http://localhost:5000 cy:ct",
-    "types": "vue-tsc --noEmit --skipLibCheck"
+    "lint:types": "vue-tsc --noEmit --skipLibCheck"
   },
   "dependencies": {
     "vue": "^3.2.16"

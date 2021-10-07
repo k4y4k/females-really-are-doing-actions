@@ -10,7 +10,8 @@
   "parserOptions": {
     "parser": "@typescript-eslint/parser",
     "sourceType": "module",
-    "project": ["./tsconfig.json"]
+    "project": ["./tsconfig.json"],
+    "extraFileExtensions": [".vue"]
   },
   "rules": {
     "space-before-function-paren": ["error", "never"],

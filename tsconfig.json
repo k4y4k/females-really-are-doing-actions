@@ -21,5 +21,6 @@
     "src/**/*.tsx",
     "src/**/*.vue",
     "vite.config.ts"
-  ]
+  ],
+  "exclude": ["src/stories/"]
 }

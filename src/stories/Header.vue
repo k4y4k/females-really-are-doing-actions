@@ -51,6 +51,7 @@
 </template>
 
 <script lang="ts">
+  // @ts-disable
   import './header.css'
   import MyButton from './Button.vue'
 
