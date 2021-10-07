@@ -8,8 +8,8 @@
     "cy:ct": "cypress run-ct",
     "cy:run": "cypress run",
     "dev": "vite",
-    "lint:eslint": "eslint . --fix",
-    "lint:eslint:check": "eslint .",
+    "lint:eslint": "eslint src/**/*.{vue,ts} --fix",
+    "lint:eslint:check": "eslint src/**/*.{vue,ts}",
     "lint:prettier": "prettier . --write",
     "lint:prettier:check": "prettier . --check",
     "lint:stylelint": "stylelint --fix './**/*.{css,vue}'",
@@ -56,9 +56,11 @@
     "stylelint-config-standard": "^22.0.0",
     "typescript": "^4",
     "vite": "^2.6.0",
+    "vite-plugin-windicss": "^1.4.9",
     "vue-eslint-parser": "^7.11.0",
     "vue-loader": "^16.8.1",
-    "vue-tsc": "^0.3.0"
+    "vue-tsc": "^0.3.0",
+    "windicss": "^3.1.9"
   },
   "packageManager": "yarn@3.0.2"
 }

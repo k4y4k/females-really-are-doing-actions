@@ -76,20 +76,20 @@
 </template>
 
 <script>
-  import './page.css'
-  import MyHeader from './Header.vue'
+import './page.css'
+import MyHeader from './Header.vue'
 
-  export default {
-    name: 'my-page',
+export default {
+  name: 'my-page',
 
-    components: { MyHeader },
+  components: { MyHeader },
 
-    props: {
-      user: {
-        type: Object,
-      },
+  props: {
+    user: {
+      type: Object,
     },
+  },
 
-    emits: ['login', 'logout', 'createAccount'],
-  }
+  emits: ['login', 'logout', 'createAccount'],
+}
 </script>

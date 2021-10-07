@@ -51,21 +51,21 @@
 </template>
 
 <script lang="ts">
-  // @ts-disable
-  import './header.css'
-  import MyButton from './Button.vue'
+// @ts-disable
+import './header.css'
+import MyButton from './Button.vue'
 
-  export default {
-    name: 'my-header',
+export default {
+  name: 'my-header',
 
-    components: { MyButton },
+  components: { MyButton },
 
-    props: {
-      user: {
-        type: Object,
-      },
+  props: {
+    user: {
+      type: Object,
     },
+  },
 
-    emits: ['login', 'logout', 'createAccount'],
-  }
+  emits: ['login', 'logout', 'createAccount'],
+}
 </script>
