@@ -50,6 +50,7 @@
     "eslint-plugin-vue": "^7.19.1",
     "eslint-plugin-vue-a11y": "^0.0.31",
     "prettier": "^2.4.1",
+    "sass": "^1.42.1",
     "start-server-and-test": "^1.14.0",
     "storybook-builder-vite": "^0.1.0",
     "stylelint": "^13.13.1",

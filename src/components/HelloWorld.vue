@@ -7,7 +7,7 @@ const count = ref(0)
 </script>
 
 <template>
-  <h1 className="font-2xl font-bold">
+  <h1>
     {{ msg }}
   </h1>
 
