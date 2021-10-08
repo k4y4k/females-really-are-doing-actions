@@ -50,6 +50,7 @@ steps:
     image: cypress/included:8.5.0
     commands:
       - yarn test:cy
+      - ls
 
   - name: Upload integration coverage
     image: plugins/codecov
