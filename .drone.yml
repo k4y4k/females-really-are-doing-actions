@@ -51,7 +51,7 @@ steps:
     commands:
       - yarn test:cy
 
-  - name: Upload coverage
+  - name: Upload integration coverage
     image: plugins/codecov
     settings:
       required: true
@@ -65,8 +65,7 @@ steps:
     commands:
       - yarn test:cy:ct
 
-  # REALLY relying on Codecov's [Merge Reports] feature
-  - name: Upload coverage
+  - name: Upload component coverage
     image: plugins/codecov
     settings:
       required: true
@@ -100,7 +99,7 @@ steps:
     commands:
       - yarn test:cy:ch
 
-  - name: Upload coverage
+  - name: Upload integration coverage
     image: plugins/codecov
     settings:
       required: true
@@ -114,7 +113,7 @@ steps:
     commands:
       - yarn test:cy:ct:ch
 
-  - name: Upload coverage
+  - name: Upload component coverage
     image: plugins/codecov
     settings:
       required: true
@@ -148,7 +147,7 @@ steps:
     commands:
       - yarn test:cy:ff
 
-  - name: Upload coverage
+  - name: Upload integration coverage
     image: plugins/codecov
     settings:
       required: true
@@ -162,7 +161,7 @@ steps:
     commands:
       - yarn test:cy:ct:ff
 
-  - name: Upload coverage
+  - name: Upload component coverage
     image: plugins/codecov
     settings:
       required: true
