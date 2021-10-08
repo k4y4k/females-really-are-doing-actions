@@ -9,7 +9,7 @@ export default defineConfig({
       ? null
       : IstanbulPlugin({
           include: 'src/*',
-          exclude: ['node_modules'],
+          exclude: ['node_modules', '.yarn/cache'],
           cypress: true,
           requireEnv: false,
         }),

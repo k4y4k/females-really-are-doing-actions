@@ -3,12 +3,14 @@ node_modules
 dist
 dist-ssr
 *.local
-.pnp.*
+coverage
+.nyc_output
+
+# Yarn Plug'n'Play
 .yarn/*
+!.yarn/cache
 !.yarn/patches
 !.yarn/plugins
 !.yarn/releases
 !.yarn/sdks
 !.yarn/versions
-coverage
-.nyc_output

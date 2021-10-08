@@ -55,7 +55,6 @@ steps:
       CYPRESS_COVERAGE: true
     commands:
       - yarn test:cy
-      - ls
 
   - name: Component tests
     image: cypress/included:8.5.0
