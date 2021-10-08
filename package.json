@@ -19,8 +19,8 @@
     "storybook": "start-storybook -p 6006",
     "storybook:build": "build-storybook",
     "test:boot": "yarn build && yarn serve",
-    "test:cy": "start-server-and-test test:boot http://localhost:5000 cy:run",
-    "test:cy:ct": "start-server-and-test test:boot http://localhost:5000 cy:ct",
+    "test:cy": "start-server-and-test 'yarn test:boot' http://localhost:5000 'yarn cy:run'",
+    "test:cy:ct": "start-server-and-test 'yarn test:boot' http://localhost:5000 'yarn cy:ct'",
     "lint:types": "vue-tsc --noEmit --skipLibCheck"
   },
   "dependencies": {
