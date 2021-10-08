@@ -14,11 +14,12 @@
     "extraFileExtensions": [".vue"]
   },
   "rules": {
-    "space-before-function-paren": ["error", "never"],
-    "comma-dangle": ["error", "always-multiline"],
-    "vue/singleline-html-element-content-newline": "off",
-    "vue/max-attributes-per-line": "off",
-    "vue/html-self-closing": "off"
+    "@typescript-eslint/indent": "off", // handled by prettier
+    "comma-dangle": ["error", "always-multiline"], // handled by prettier
+    "space-before-function-paren": ["error", "never"], // handled by prettier
+    "vue/html-self-closing": "off",
+    "vue/max-attributes-per-line": "off", // handled by prettier
+    "vue/singleline-html-element-content-newline": "off"
   },
   "globals": {
     "defineProps": "readonly",

@@ -3,5 +3,7 @@
     "testFiles": "**/*.cypress.{js,ts,jsx,tsx}",
     "componentFolder": "src"
   },
-  "video": false
+  "video": false,
+  "viewportWidth": 1024,
+  "viewportHeight": 768
 }

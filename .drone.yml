@@ -51,10 +51,29 @@ steps:
     commands:
       - yarn test:cy
 
+  - name: Upload coverage
+    image: plugins/codecov
+    settings:
+      required: true
+      token:
+        from_secret: codecov-token
+      paths:
+        - coverage/
+
   - name: Component tests
     image: cypress/included:8.5.0
     commands:
       - yarn test:cy:ct
+
+  # REALLY relying on Codecov's [Merge Reports] feature
+  - name: Upload coverage
+    image: plugins/codecov
+    settings:
+      required: true
+      token:
+        from_secret: codecov-token
+      paths:
+        - coverage/
 
 ---
 kind: pipeline
@@ -81,10 +100,28 @@ steps:
     commands:
       - yarn test:cy:ch
 
+  - name: Upload coverage
+    image: plugins/codecov
+    settings:
+      required: true
+      token:
+        from_secret: codecov-token
+      paths:
+        - coverage/
+
   - name: Component tests
     image: cypress/included:8.5.0
     commands:
       - yarn test:cy:ct:ch
+
+  - name: Upload coverage
+    image: plugins/codecov
+    settings:
+      required: true
+      token:
+        from_secret: codecov-token
+      paths:
+        - coverage/
 
 ---
 kind: pipeline
@@ -111,10 +148,28 @@ steps:
     commands:
       - yarn test:cy:ff
 
+  - name: Upload coverage
+    image: plugins/codecov
+    settings:
+      required: true
+      token:
+        from_secret: codecov-token
+      paths:
+        - coverage/
+
   - name: Component tests
     image: cypress/included:8.5.0
     commands:
       - yarn test:cy:ct:ff
+
+  - name: Upload coverage
+    image: plugins/codecov
+    settings:
+      required: true
+      token:
+        from_secret: codecov-token
+      paths:
+        - coverage/
 
 ---
 kind: pipeline

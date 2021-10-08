@@ -10,3 +10,5 @@ dist-ssr
 !.yarn/releases
 !.yarn/sdks
 !.yarn/versions
+coverage
+.nyc_output

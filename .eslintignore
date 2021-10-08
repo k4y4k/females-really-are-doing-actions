@@ -4,3 +4,4 @@ coverage
 .yarn
 .vscode
 src/stories/
+.nyc_output
