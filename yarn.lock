@@ -70,7 +70,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@babel/core@npm:7.15.8, @babel/core@npm:>=7.9.0, @babel/core@npm:^7.1.0, @babel/core@npm:^7.1.6, @babel/core@npm:^7.12.10, @babel/core@npm:^7.15.5, @babel/core@npm:^7.15.8, @babel/core@npm:^7.7.5":
+"@babel/core@npm:7.15.8, @babel/core@npm:>=7.9.0, @babel/core@npm:^7.1.0, @babel/core@npm:^7.1.6, @babel/core@npm:^7.12.10, @babel/core@npm:^7.15.5, @babel/core@npm:^7.7.5":
   version: 7.15.8
   resolution: "@babel/core@npm:7.15.8"
   dependencies:
@@ -1733,7 +1733,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@cypress/code-coverage@npm:^3.9.11":
+"@cypress/code-coverage@npm:3.9.11":
   version: 3.9.11
   resolution: "@cypress/code-coverage@npm:3.9.11"
   dependencies:
@@ -1786,7 +1786,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@cypress/vite-dev-server@npm:^2.1.1":
+"@cypress/vite-dev-server@npm:2.1.1":
   version: 2.1.1
   resolution: "@cypress/vite-dev-server@npm:2.1.1"
   dependencies:
@@ -1798,7 +1798,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@cypress/vue@npm:3":
+"@cypress/vue@npm:3.0.3":
   version: 3.0.3
   resolution: "@cypress/vue@npm:3.0.3"
   dependencies:
@@ -2284,7 +2284,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@storybook/addon-actions@npm:6.4.0-beta.5, @storybook/addon-actions@npm:^6.4.0-beta.5":
+"@storybook/addon-actions@npm:6.4.0-beta.5":
   version: 6.4.0-beta.5
   resolution: "@storybook/addon-actions@npm:6.4.0-beta.5"
   dependencies:
@@ -2373,7 +2373,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@storybook/addon-docs@npm:6.4.0-beta.5, @storybook/addon-docs@npm:^6.4.0-beta.5":
+"@storybook/addon-docs@npm:6.4.0-beta.5":
   version: 6.4.0-beta.5
   resolution: "@storybook/addon-docs@npm:6.4.0-beta.5"
   dependencies:
@@ -2472,7 +2472,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@storybook/addon-essentials@npm:^6.4.0-beta.5":
+"@storybook/addon-essentials@npm:6.4.0-beta.5":
   version: 6.4.0-beta.5
   resolution: "@storybook/addon-essentials@npm:6.4.0-beta.5"
   dependencies:
@@ -2516,7 +2516,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@storybook/addon-links@npm:^6.4.0-beta.5":
+"@storybook/addon-links@npm:6.4.0-beta.5":
   version: 6.4.0-beta.5
   resolution: "@storybook/addon-links@npm:6.4.0-beta.5"
   dependencies:
@@ -3362,7 +3362,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@storybook/vue3@npm:^6.4.0-beta.5":
+"@storybook/vue3@npm:6.4.0-beta.5":
   version: 6.4.0-beta.5
   resolution: "@storybook/vue3@npm:6.4.0-beta.5"
   dependencies:
@@ -3782,7 +3782,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@typescript-eslint/eslint-plugin@npm:^4.0.1":
+"@typescript-eslint/eslint-plugin@npm:4.33.0":
   version: 4.33.0
   resolution: "@typescript-eslint/eslint-plugin@npm:4.33.0"
   dependencies:
@@ -3820,7 +3820,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@typescript-eslint/parser@npm:^4.0.0, @typescript-eslint/parser@npm:^4.33.0":
+"@typescript-eslint/parser@npm:4.33.0, @typescript-eslint/parser@npm:^4.0.0":
   version: 4.33.0
   resolution: "@typescript-eslint/parser@npm:4.33.0"
   dependencies:
@@ -3898,7 +3898,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@vitejs/plugin-vue@npm:^1.9.2":
+"@vitejs/plugin-vue@npm:1.9.3":
   version: 1.9.3
   resolution: "@vitejs/plugin-vue@npm:1.9.3"
   peerDependencies:
@@ -4970,7 +4970,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"babel-loader@npm:^8.0.0, babel-loader@npm:^8.2.2":
+"babel-loader@npm:8.2.2, babel-loader@npm:^8.0.0":
   version: 8.2.2
   resolution: "babel-loader@npm:8.2.2"
   dependencies:
@@ -6764,7 +6764,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"cypress@npm:^8.5.0":
+"cypress@npm:8.5.0":
   version: 8.5.0
   resolution: "cypress@npm:8.5.0"
   dependencies:
@@ -7876,7 +7876,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-plugin-cypress@npm:^2.12.1":
+"eslint-plugin-cypress@npm:2.12.1":
   version: 2.12.1
   resolution: "eslint-plugin-cypress@npm:2.12.1"
   dependencies:
@@ -7899,7 +7899,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-plugin-import@npm:^2.22.1":
+"eslint-plugin-import@npm:2.24.2":
   version: 2.24.2
   resolution: "eslint-plugin-import@npm:2.24.2"
   dependencies:
@@ -7945,7 +7945,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-plugin-node@npm:^11.1.0":
+"eslint-plugin-node@npm:11.1.0":
   version: 11.1.0
   resolution: "eslint-plugin-node@npm:11.1.0"
   dependencies:
@@ -7961,7 +7961,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-plugin-promise@npm:^5.0.0":
+"eslint-plugin-promise@npm:5.1.0":
   version: 5.1.0
   resolution: "eslint-plugin-promise@npm:5.1.0"
   peerDependencies:
@@ -7970,7 +7970,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-plugin-vue-a11y@npm:^0.0.31":
+"eslint-plugin-vue-a11y@npm:0.0.31":
   version: 0.0.31
   resolution: "eslint-plugin-vue-a11y@npm:0.0.31"
   dependencies:
@@ -7987,18 +7987,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-plugin-vue@npm:^5.2.2":
-  version: 5.2.3
-  resolution: "eslint-plugin-vue@npm:5.2.3"
-  dependencies:
-    vue-eslint-parser: ^5.0.0
-  peerDependencies:
-    eslint: ^5.0.0
-  checksum: 915c62dab21567e3cd5cfaf01d0d31abd4e11086157494cb87dfd408a661b59f4d87fd9a1f38d99a75e4355dd38973c16436e7d930a6c062d387e64a7661120f
-  languageName: node
-  linkType: hard
-
-"eslint-plugin-vue@npm:^7.19.1":
+"eslint-plugin-vue@npm:7.19.1":
   version: 7.19.1
   resolution: "eslint-plugin-vue@npm:7.19.1"
   dependencies:
@@ -8009,6 +7998,17 @@ __metadata:
   peerDependencies:
     eslint: ^6.2.0 || ^7.0.0 || ^8.0.0-0
   checksum: 0fa7f00ab2a9e8481a76eb39251b812bd9cb665bc9b3b702c79158dcd39cdb635f2872152612a261990653a6727c4c49c7a86ee18689cea21fd7a0f5b3e2de4e
+  languageName: node
+  linkType: hard
+
+"eslint-plugin-vue@npm:^5.2.2":
+  version: 5.2.3
+  resolution: "eslint-plugin-vue@npm:5.2.3"
+  dependencies:
+    vue-eslint-parser: ^5.0.0
+  peerDependencies:
+    eslint: ^5.0.0
+  checksum: 915c62dab21567e3cd5cfaf01d0d31abd4e11086157494cb87dfd408a661b59f4d87fd9a1f38d99a75e4355dd38973c16436e7d930a6c062d387e64a7661120f
   languageName: node
   linkType: hard
 
@@ -8066,7 +8066,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint@npm:^7.12.1":
+"eslint@npm:7.32.0":
   version: 7.32.0
   resolution: "eslint@npm:7.32.0"
   dependencies:
@@ -8474,43 +8474,43 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "fancy-site@workspace:."
   dependencies:
-    "@babel/core": ^7.15.8
-    "@cypress/code-coverage": ^3.9.11
-    "@cypress/vite-dev-server": ^2.1.1
-    "@cypress/vue": 3
-    "@mdx-js/react": ^1.6.22
-    "@storybook/addon-actions": ^6.4.0-beta.5
-    "@storybook/addon-docs": ^6.4.0-beta.5
-    "@storybook/addon-essentials": ^6.4.0-beta.5
-    "@storybook/addon-links": ^6.4.0-beta.5
-    "@storybook/vue3": ^6.4.0-beta.5
-    "@typescript-eslint/eslint-plugin": ^4.0.1
-    "@typescript-eslint/parser": ^4.33.0
-    "@vitejs/plugin-vue": ^1.9.2
-    babel-loader: ^8.2.2
-    cypress: ^8.5.0
-    eslint: ^7.12.1
+    "@babel/core": 7.15.8
+    "@cypress/code-coverage": 3.9.11
+    "@cypress/vite-dev-server": 2.1.1
+    "@cypress/vue": 3.0.3
+    "@mdx-js/react": 1.6.22
+    "@storybook/addon-actions": 6.4.0-beta.5
+    "@storybook/addon-docs": 6.4.0-beta.5
+    "@storybook/addon-essentials": 6.4.0-beta.5
+    "@storybook/addon-links": 6.4.0-beta.5
+    "@storybook/vue3": 6.4.0-beta.5
+    "@typescript-eslint/eslint-plugin": 4.33.0
+    "@typescript-eslint/parser": 4.33.0
+    "@vitejs/plugin-vue": 1.9.3
+    babel-loader: 8.2.2
+    cypress: 8.5.0
+    eslint: 7.32.0
     eslint-config-standard-with-typescript: latest
-    eslint-plugin-cypress: ^2.12.1
-    eslint-plugin-import: ^2.22.1
-    eslint-plugin-node: ^11.1.0
-    eslint-plugin-promise: ^5.0.0
-    eslint-plugin-vue: ^7.19.1
-    eslint-plugin-vue-a11y: ^0.0.31
-    nyc: ^15.1.0
-    prettier: ^2.4.1
-    sass: ^1.42.1
-    start-server-and-test: ^1.14.0
-    storybook-builder-vite: ^0.1.0
-    stylelint: ^13.13.1
-    stylelint-config-standard: ^22.0.0
-    typescript: ^4
-    vite: ^2.6.0
-    vite-plugin-istanbul: ^2.2.1
-    vue: ^3.2.16
-    vue-eslint-parser: ^7.11.0
-    vue-loader: ^16.8.1
-    vue-tsc: ^0.3.0
+    eslint-plugin-cypress: 2.12.1
+    eslint-plugin-import: 2.24.2
+    eslint-plugin-node: 11.1.0
+    eslint-plugin-promise: 5.1.0
+    eslint-plugin-vue: 7.19.1
+    eslint-plugin-vue-a11y: 0.0.31
+    nyc: 15.1.0
+    prettier: 2.4.1
+    sass: 1.42.1
+    start-server-and-test: 1.14.0
+    storybook-builder-vite: 0.1.0
+    stylelint: 13.13.1
+    stylelint-config-standard: 22.0.0
+    typescript: 4.4.3
+    vite: 2.6.3
+    vite-plugin-istanbul: 2.2.1
+    vue: 3.2.19
+    vue-eslint-parser: 7.11.0
+    vue-loader: 16.8.1
+    vue-tsc: 0.3.0
   languageName: unknown
   linkType: soft
 
@@ -12612,7 +12612,7 @@ fsevents@^1.2.7:
   languageName: node
   linkType: hard
 
-"nyc@npm:15.1.0, nyc@npm:^15.1.0":
+"nyc@npm:15.1.0":
   version: 15.1.0
   resolution: "nyc@npm:15.1.0"
   dependencies:
@@ -13582,7 +13582,7 @@ fsevents@^1.2.7:
   languageName: node
   linkType: hard
 
-"prettier@npm:^2.2.1, prettier@npm:^2.4.1":
+"prettier@npm:2.4.1, prettier@npm:^2.2.1":
   version: 2.4.1
   resolution: "prettier@npm:2.4.1"
   bin:
@@ -15050,7 +15050,7 @@ resolve@1.1.7:
   languageName: node
   linkType: hard
 
-"sass@npm:^1.42.1":
+"sass@npm:1.42.1":
   version: 1.42.1
   resolution: "sass@npm:1.42.1"
   dependencies:
@@ -15675,7 +15675,7 @@ resolve@1.1.7:
   languageName: node
   linkType: hard
 
-"start-server-and-test@npm:^1.14.0":
+"start-server-and-test@npm:1.14.0":
   version: 1.14.0
   resolution: "start-server-and-test@npm:1.14.0"
   dependencies:
@@ -15725,7 +15725,7 @@ resolve@1.1.7:
   languageName: node
   linkType: hard
 
-"storybook-builder-vite@npm:^0.1.0":
+"storybook-builder-vite@npm:0.1.0":
   version: 0.1.0
   resolution: "storybook-builder-vite@npm:0.1.0"
   dependencies:
@@ -16047,7 +16047,7 @@ resolve@1.1.7:
   languageName: node
   linkType: hard
 
-"stylelint-config-standard@npm:^22.0.0":
+"stylelint-config-standard@npm:22.0.0":
   version: 22.0.0
   resolution: "stylelint-config-standard@npm:22.0.0"
   dependencies:
@@ -16058,7 +16058,7 @@ resolve@1.1.7:
   languageName: node
   linkType: hard
 
-"stylelint@npm:^13.13.1":
+"stylelint@npm:13.13.1":
   version: 13.13.1
   resolution: "stylelint@npm:13.13.1"
   dependencies:
@@ -16723,7 +16723,7 @@ resolve@1.1.7:
   languageName: node
   linkType: hard
 
-typescript@^4:
+typescript@4.4.3:
   version: 4.4.3
   resolution: "typescript@npm:4.4.3"
   bin:
@@ -16733,7 +16733,7 @@ typescript@^4:
   languageName: node
   linkType: hard
 
-"typescript@patch:typescript@^4#~builtin<compat/typescript>":
+"typescript@patch:typescript@4.4.3#~builtin<compat/typescript>":
   version: 4.4.3
   resolution: "typescript@patch:typescript@npm%3A4.4.3#~builtin<compat/typescript>::version=4.4.3&hash=32657b"
   bin:
@@ -17265,7 +17265,7 @@ typescript@^4:
   languageName: node
   linkType: hard
 
-"vite-plugin-istanbul@npm:^2.2.1":
+"vite-plugin-istanbul@npm:2.2.1":
   version: 2.2.1
   resolution: "vite-plugin-istanbul@npm:2.2.1"
   dependencies:
@@ -17290,7 +17290,7 @@ typescript@^4:
   languageName: node
   linkType: hard
 
-"vite@npm:^2.6.0":
+"vite@npm:2.6.3":
   version: 2.6.3
   resolution: "vite@npm:2.6.3"
   dependencies:
@@ -17528,6 +17528,23 @@ typescript@^4:
   languageName: node
   linkType: hard
 
+"vue-eslint-parser@npm:7.11.0, vue-eslint-parser@npm:^7.10.0":
+  version: 7.11.0
+  resolution: "vue-eslint-parser@npm:7.11.0"
+  dependencies:
+    debug: ^4.1.1
+    eslint-scope: ^5.1.1
+    eslint-visitor-keys: ^1.1.0
+    espree: ^6.2.1
+    esquery: ^1.4.0
+    lodash: ^4.17.21
+    semver: ^6.3.0
+  peerDependencies:
+    eslint: ">=5.0.0"
+  checksum: 16d8bd31dacd9e5d3cd0fc82354c0cfdb42ee3d2e0c3aeda385b82aa48a59a440de3dc18521ea6535f4b00a54eb248d49a6ea2323fbae0d3c1afa0a00c63fe6c
+  languageName: node
+  linkType: hard
+
 "vue-eslint-parser@npm:^5.0.0":
   version: 5.0.0
   resolution: "vue-eslint-parser@npm:5.0.0"
@@ -17560,23 +17577,6 @@ typescript@^4:
   languageName: node
   linkType: hard
 
-"vue-eslint-parser@npm:^7.10.0, vue-eslint-parser@npm:^7.11.0":
-  version: 7.11.0
-  resolution: "vue-eslint-parser@npm:7.11.0"
-  dependencies:
-    debug: ^4.1.1
-    eslint-scope: ^5.1.1
-    eslint-visitor-keys: ^1.1.0
-    espree: ^6.2.1
-    esquery: ^1.4.0
-    lodash: ^4.17.21
-    semver: ^6.3.0
-  peerDependencies:
-    eslint: ">=5.0.0"
-  checksum: 16d8bd31dacd9e5d3cd0fc82354c0cfdb42ee3d2e0c3aeda385b82aa48a59a440de3dc18521ea6535f4b00a54eb248d49a6ea2323fbae0d3c1afa0a00c63fe6c
-  languageName: node
-  linkType: hard
-
 "vue-inbrowser-compiler-utils@npm:^4.41.2":
   version: 4.41.2
   resolution: "vue-inbrowser-compiler-utils@npm:4.41.2"
@@ -17586,7 +17586,7 @@ typescript@^4:
   languageName: node
   linkType: hard
 
-"vue-loader@npm:^16.0.0, vue-loader@npm:^16.8.1":
+"vue-loader@npm:16.8.1, vue-loader@npm:^16.0.0":
   version: 16.8.1
   resolution: "vue-loader@npm:16.8.1"
   dependencies:
@@ -17599,7 +17599,7 @@ typescript@^4:
   languageName: node
   linkType: hard
 
-"vue-tsc@npm:^0.3.0":
+"vue-tsc@npm:0.3.0":
   version: 0.3.0
   resolution: "vue-tsc@npm:0.3.0"
   dependencies:
@@ -17612,7 +17612,7 @@ typescript@^4:
   languageName: node
   linkType: hard
 
-"vue@npm:3.2.19, vue@npm:^3.2.16":
+"vue@npm:3.2.19":
   version: 3.2.19
   resolution: "vue@npm:3.2.19"
   dependencies:
