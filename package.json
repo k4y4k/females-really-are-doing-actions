@@ -67,7 +67,7 @@
     "vite-plugin-istanbul": "2.2.1",
     "vue-eslint-parser": "7.11.0",
     "vue-loader": "16.8.1",
-    "vue-tsc": "0.3.0"
+    "vue-tsc": "0.28.0"
   },
   "packageManager": "yarn@3.0.2"
 }
