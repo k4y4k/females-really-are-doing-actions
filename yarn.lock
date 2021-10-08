@@ -8505,7 +8505,7 @@ __metadata:
     stylelint: 13.13.1
     stylelint-config-standard: 22.0.0
     typescript: 4.4.3
-    vite: 2.6.3
+    vite: 2.6.5
     vite-plugin-istanbul: 2.2.1
     vue: 3.2.19
     vue-eslint-parser: 7.11.0
@@ -17290,9 +17290,9 @@ typescript@4.4.3:
   languageName: node
   linkType: hard
 
-"vite@npm:2.6.3":
-  version: 2.6.3
-  resolution: "vite@npm:2.6.3"
+"vite@npm:2.6.5":
+  version: 2.6.5
+  resolution: "vite@npm:2.6.5"
   dependencies:
     esbuild: ^0.13.2
     fsevents: ~2.3.2
@@ -17315,7 +17315,7 @@ typescript@4.4.3:
       optional: true
   bin:
     vite: bin/vite.js
-  checksum: a86e52d9887118f133be2d8e210e2189f1b245371c41ba2326026ffd4a382fc73cca52e0818c2bab9aabeaa4ef9dbd104314f68a565ee72d3999b649e84c4af6
+  checksum: 3e0c47942b84d5b3d4156ae6e9428bab6e7d70e52795a2269fb709d2fb50c68f80b9938a695086c669761701d9222f66b2b21ba57f57ef69e384c9573d1b41bf
   languageName: node
   linkType: hard
 
