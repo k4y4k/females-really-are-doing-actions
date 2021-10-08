@@ -55,6 +55,7 @@ steps:
       CYPRESS_COVERAGE: true
     commands:
       - yarn test:cy
+      - ls
 
   - name: Upload integration coverage
     image: plugins/codecov
