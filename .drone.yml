@@ -16,6 +16,7 @@ steps:
   - name: install
     image: node:16
     commands:
+      - exit 78
       - yarn
 
   - name: preflight
@@ -79,25 +80,13 @@ steps:
 
   - name: Integration tests
     image: cypress/included:8.5.0
-    volumes:
-      - name: shm
-        path: /dev/shm
     commands:
       - yarn test:cy --browser firefox
 
   - name: Component tests
     image: cypress/included:8.5.0
-    volumes:
-      - name: shm
-        path: /dev/shm
     commands:
       - yarn test:cy:ct --browser firefox
-
-volumes:
-  - name: shm
-    temp:
-      size_limit: 1073741824
-      medium: 'memory'
 
 ---
 kind: pipeline
@@ -117,7 +106,6 @@ steps:
   - name: install
     image: cypress/included:8.5.0
     commands:
-      - exit 78
       - yarn
 
   - name: Integration tests
