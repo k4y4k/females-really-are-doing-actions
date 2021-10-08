@@ -5,7 +5,8 @@
   "scripts": {
     "build": "vue-tsc --noEmit --skipLibCheck && vite build",
     "cy": "cypress open",
-    "cy:ct": "cypress run-ct",
+    "cy:ct": "cypress open-ct",
+    "cy:run:ct": "cypress run-ct",
     "cy:run": "cypress run",
     "dev": "vite",
     "lint:eslint": "eslint src/**/*.{vue,ts} --fix",
@@ -20,7 +21,9 @@
     "storybook:build": "build-storybook",
     "test:boot": "yarn build && yarn serve",
     "test:cy": "start-server-and-test 'yarn test:boot' http://localhost:5000 'yarn cy:run'",
-    "test:cy:ct": "start-server-and-test 'yarn test:boot' http://localhost:5000 'yarn cy:ct'",
+    "test:cy:ff": "start-server-and-test 'yarn test:boot' http://localhost:5000 'yarn cy:run --browser firefox'",
+    "test:cy:ct": "start-server-and-test 'yarn test:boot' http://localhost:5000 'yarn cy:run:ct'",
+    "test:cy:ct:ff": "start-server-and-test 'yarn test:boot' http://localhost:5000 'yarn cy:run:ct --browser firefox'",
     "lint:types": "vue-tsc --noEmit --skipLibCheck"
   },
   "dependencies": {

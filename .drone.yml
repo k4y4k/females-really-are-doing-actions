@@ -82,12 +82,12 @@ steps:
   - name: Integration tests
     image: cypress/included:8.5.0
     commands:
-      - yarn test:cy --browser firefox
+      - yarn test:cy:ff
 
   - name: Component tests
     image: cypress/included:8.5.0
     commands:
-      - yarn test:cy:ct --browser firefox
+      - yarn test:cy:ct:ff
 
 ---
 kind: pipeline
