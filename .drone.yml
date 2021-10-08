@@ -51,9 +51,10 @@ steps:
 
   - name: Integration tests
     image: cypress/included:8.5.0
+    environment:
+      CYPRESS_COVERAGE: true
     commands:
       - yarn test:cy
-      - ls
 
   - name: Upload integration coverage
     image: plugins/codecov
@@ -66,6 +67,8 @@ steps:
 
   - name: Component tests
     image: cypress/included:8.5.0
+    environment:
+      CYPRESS_COVERAGE: true
     commands:
       - yarn test:cy:ct
 
@@ -103,6 +106,8 @@ steps:
 
   - name: Integration tests
     image: cypress/included:8.5.0
+    environment:
+      CYPRESS_COVERAGE: true
     commands:
       - yarn test:cy:ch
 
@@ -117,6 +122,8 @@ steps:
 
   - name: Component tests
     image: cypress/included:8.5.0
+    environment:
+      CYPRESS_COVERAGE: true
     commands:
       - yarn test:cy:ct:ch
 
@@ -154,6 +161,8 @@ steps:
 
   - name: Integration tests
     image: cypress/included:8.5.0
+    environment:
+      CYPRESS_COVERAGE: true
     commands:
       - yarn test:cy:ff
 
@@ -168,6 +177,8 @@ steps:
 
   - name: Component tests
     image: cypress/included:8.5.0
+    environment:
+      CYPRESS_COVERAGE: true
     commands:
       - yarn test:cy:ct:ff
 
