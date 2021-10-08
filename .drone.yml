@@ -30,8 +30,7 @@ steps:
 ---
 kind: pipeline
 type: docker
-name: Cypress (Electron / Chromium)
-# why bother with Chrome and Chromium?
+name: Cypress (Electron)
 
 trigger:
   branch:
@@ -58,6 +57,36 @@ steps:
     image: cypress/included:8.5.0
     commands:
       - yarn test:cy:ct
+
+---
+kind: pipeline
+type: docker
+name: Cypress (Chrome)
+
+trigger:
+  branch:
+    exclude:
+      - gh-pages
+      - github-pages
+      - staging.tmp
+      - trying.tmp
+      - staging-squash-merge.tmp
+
+steps:
+  - name: install
+    image: cypress/included:8.5.0
+    commands:
+      - yarn
+
+  - name: Integration tests
+    image: cypress/included:8.5.0
+    commands:
+      - yarn test:cy:ch
+
+  - name: Component tests
+    image: cypress/included:8.5.0
+    commands:
+      - yarn test:cy:ct:ch
 
 ---
 kind: pipeline
@@ -95,8 +124,9 @@ type: docker
 name: build
 
 depends_on:
-  - Cypress (Electron / Chromium)
+  - Cypress (Electron)
   - Cypress (Firefox)
+  - Cypress (Chrome)
   - Preflight
 
 trigger:
