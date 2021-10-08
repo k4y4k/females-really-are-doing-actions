@@ -31,6 +31,9 @@ kind: pipeline
 type: docker
 name: Cypress (Electron)
 
+depends_on:
+  - Preflight
+
 trigger:
   branch:
     exclude:
@@ -80,6 +83,9 @@ kind: pipeline
 type: docker
 name: Cypress (Chrome)
 
+depends_on:
+  - Preflight
+
 trigger:
   branch:
     exclude:
@@ -127,6 +133,9 @@ steps:
 kind: pipeline
 type: docker
 name: Cypress (Firefox)
+
+depends_on:
+  - Preflight
 
 trigger:
   branch:
