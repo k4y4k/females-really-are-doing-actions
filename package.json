@@ -4,10 +4,10 @@
   "private": true,
   "scripts": {
     "build": "vue-tsc --noEmit --skipLibCheck && vite build",
-    "cy": "cypress open",
-    "cy:ct": "cypress open-ct",
-    "cy:run": "cypress run",
-    "cy:run:ct": "cypress run-ct",
+    "cy": "CYPRESS_COVERAGE=true cypress open",
+    "cy:ct": "CYPRESS_COVERAGE=true cypress open-ct",
+    "cy:run": "CYPRESS_COVERAGE=true cypress run",
+    "cy:run:ct": "CYPRESS_COVERAGE=true cypress run-ct",
     "dev": "vite",
     "lint:eslint": "eslint src/**/*.{vue,ts} --fix",
     "lint:eslint:check": "eslint src/**/*.{vue,ts}",
@@ -21,12 +21,12 @@
     "storybook": "start-storybook -p 6006",
     "storybook:build": "build-storybook",
     "test:boot": "yarn build && yarn serve",
-    "test:cy": "CYPRESS_COVERAGE=true start-server-and-test 'yarn test:boot' http://localhost:5000 'yarn cy:run'",
-    "test:cy:ch": "CYPRESS_COVERAGE=true start-server-and-test 'yarn test:boot' http://localhost:5000 'yarn cy:run --browser chrome'",
-    "test:cy:ct": "CYPRESS_COVERAGE=true start-server-and-test 'yarn test:boot' http://localhost:5000 'yarn cy:run:ct'",
-    "test:cy:ct:ch": "CYPRESS_COVERAGE=true start-server-and-test 'yarn test:boot' http://localhost:5000 'yarn cy:run:ct --browser chrome'",
-    "test:cy:ct:ff": "CYPRESS_COVERAGE=true start-server-and-test 'yarn test:boot' http://localhost:5000 'yarn cy:run:ct --browser firefox'",
-    "test:cy:ff": "CYPRESS_COVERAGE=true start-server-and-test 'yarn test:boot' http://localhost:5000 'yarn cy:run --browser firefox'"
+    "test:cy": "start-server-and-test 'yarn test:boot' http://localhost:5000 'yarn cy:run'",
+    "test:cy:ch": "start-server-and-test 'yarn test:boot' http://localhost:5000 'yarn cy:run --browser chrome'",
+    "test:cy:ct": "start-server-and-test 'yarn test:boot' http://localhost:5000 'yarn cy:run:ct'",
+    "test:cy:ct:ch": "start-server-and-test 'yarn test:boot' http://localhost:5000 'yarn cy:run:ct --browser chrome'",
+    "test:cy:ct:ff": "start-server-and-test 'yarn test:boot' http://localhost:5000 'yarn cy:run:ct --browser firefox'",
+    "test:cy:ff": "start-server-and-test 'yarn test:boot' http://localhost:5000 'yarn cy:run --browser firefox'"
   },
   "dependencies": {
     "vue": "^3.2.16"
