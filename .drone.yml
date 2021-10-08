@@ -1,0 +1,226 @@
+---
+kind: pipeline
+type: docker
+name: Preflight
+
+trigger:
+  branch:
+    exclude:
+      - gh-pages
+      - github-pages
+      - staging.tmp
+      - trying.tmp
+      - staging-squash-merge.tmp
+
+steps:
+  - name: install
+    image: node:16
+    commands:
+      - yarn
+
+  - name: preflight
+    image: node:16
+    commands:
+      - yarn lint:prettier:check
+      - yarn lint:eslint:check
+      - yarn lint:stylelint:check
+      - yarn lint:types
+
+---
+kind: pipeline
+type: docker
+name: Cypress (Electron)
+
+depends_on:
+  - Preflight
+
+trigger:
+  branch:
+    exclude:
+      - gh-pages
+      - github-pages
+      - staging.tmp
+      - trying.tmp
+      - staging-squash-merge.tmp
+
+steps:
+  - name: install
+    image: cypress/included:8.5.0
+    commands:
+      - yarn
+
+  - name: Integration tests
+    image: cypress/included:8.5.0
+    environment:
+      CYPRESS_COVERAGE: true
+    commands:
+      - yarn test:cy
+      - ls
+
+  - name: Component tests
+    image: cypress/included:8.5.0
+    environment:
+      CYPRESS_COVERAGE: true
+    commands:
+      - yarn test:cy:ct
+
+  - name: Upload coverage
+    image: plugins/codecov
+    settings:
+      required: true
+      token:
+        from_secret: codecov-token
+      paths:
+        - coverage/
+
+---
+kind: pipeline
+type: docker
+name: Cypress (Chrome)
+
+depends_on:
+  - Preflight
+
+trigger:
+  branch:
+    exclude:
+      - gh-pages
+      - github-pages
+      - staging.tmp
+      - trying.tmp
+      - staging-squash-merge.tmp
+
+steps:
+  - name: install
+    image: cypress/included:8.5.0
+    commands:
+      - yarn
+
+  - name: Integration tests
+    image: cypress/included:8.5.0
+    environment:
+      CYPRESS_COVERAGE: true
+    commands:
+      - yarn test:cy:ch
+
+  - name: Component tests
+    image: cypress/included:8.5.0
+    environment:
+      CYPRESS_COVERAGE: true
+    commands:
+      - yarn test:cy:ct:ch
+
+  - name: Upload coverage
+    image: plugins/codecov
+    settings:
+      required: true
+      token:
+        from_secret: codecov-token
+      paths:
+        - coverage/
+
+---
+kind: pipeline
+type: docker
+name: Cypress (Firefox)
+
+depends_on:
+  - Preflight
+
+trigger:
+  branch:
+    exclude:
+      - gh-pages
+      - github-pages
+      - staging.tmp
+      - trying.tmp
+      - staging-squash-merge.tmp
+
+steps:
+  - name: install
+    image: cypress/included:8.5.0
+    commands:
+      - yarn
+
+  - name: Integration tests
+    image: cypress/included:8.5.0
+    environment:
+      CYPRESS_COVERAGE: true
+    commands:
+      - yarn test:cy:ff
+
+  - name: Component tests
+    image: cypress/included:8.5.0
+    environment:
+      CYPRESS_COVERAGE: true
+    commands:
+      - yarn test:cy:ct:ff
+
+  - name: Upload coverage
+    image: plugins/codecov
+    settings:
+      required: true
+      token:
+        from_secret: codecov-token
+      paths:
+        - coverage/
+
+---
+kind: pipeline
+type: docker
+name: build
+
+depends_on:
+  - Cypress (Electron)
+  - Cypress (Firefox)
+  - Cypress (Chrome)
+  - Preflight
+
+trigger:
+  branch:
+    exclude:
+      - gh-pages
+      - github-pages
+      - staging.tmp
+      - trying.tmp
+      - staging-squash-merge.tmp
+
+steps:
+  - name: install
+    image: node:16
+    commands:
+      - yarn
+
+  - name: build
+    image: node:16
+    commands:
+      - yarn build
+
+---
+kind: pipeline
+type: docker
+name: discord
+
+depends_on:
+  - build
+
+clone:
+  disable: true
+
+trigger:
+  status:
+    - failure
+    - success
+
+steps:
+  - name: discord
+    image: appleboy/drone-discord
+    settings:
+      webhook_id:
+        from_secret: discord_webhook_id
+      webhook_token:
+        from_secret: discord_webhook_token
+    when:
+      status:
+        - success
+        - failure

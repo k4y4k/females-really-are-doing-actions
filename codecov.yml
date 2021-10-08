@@ -1,0 +1,14 @@
+coverage:
+  status:
+    project:
+      default:
+        informational: true
+        target: 85
+        threshold: 1
+    patch:
+      default:
+        informational: true
+        target: auto
+comment:
+  behavior: new
+  after_n_builds: 3

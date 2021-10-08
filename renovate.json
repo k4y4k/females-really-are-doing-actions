@@ -1,0 +1,25 @@
+{
+  "extends": ["config:base", ":maintainLockFilesWeekly"],
+  "semanticCommits": "enabled",
+  "stabilityDays": 3,
+  "prCreation": "not-pending",
+  "labels": ["type: dependencies"],
+  "dependencyDashboard": true,
+  "dependencyDashboardAutoclose": true,
+  "dependencyDashboardFooter": "Wow! So FANCY! 💅🍷✨",
+  "commitMessagePrefix": "⬆️",
+  "commitMessageAction": "Update",
+  "major": { "automerge": false },
+  "packageRules": [
+    {
+      "matchUpdateTypes": "pin",
+      "commitMessagePrefix": "📌",
+      "commitMessageAction": "Pin"
+    },
+    {
+      "matchUpdateTypes": "rollback",
+      "commitMessagePrefix": "⬇️",
+      "commitMessageAction": "Downgrade"
+    }
+  ]
+}
