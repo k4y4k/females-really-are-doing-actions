@@ -5,11 +5,13 @@ import IstanbulPlugin from 'vite-plugin-istanbul'
 export default defineConfig({
   plugins: [
     vue(),
-    IstanbulPlugin({
-      include: 'src/*',
-      exclude: ['node_modules'],
-      cypress: true,
-      requireEnv: true,
-    }),
+    process.env.NODE_ENV === 'production'
+      ? null
+      : IstanbulPlugin({
+          include: 'src/*',
+          exclude: ['node_modules'],
+          cypress: true,
+          requireEnv: false,
+        }),
   ],
 })

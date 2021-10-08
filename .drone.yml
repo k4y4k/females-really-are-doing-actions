@@ -57,15 +57,6 @@ steps:
       - yarn test:cy
       - ls
 
-  - name: Upload integration coverage
-    image: plugins/codecov
-    settings:
-      required: true
-      token:
-        from_secret: codecov-token
-      paths:
-        - coverage/
-
   - name: Component tests
     image: cypress/included:8.5.0
     environment:
@@ -73,7 +64,7 @@ steps:
     commands:
       - yarn test:cy:ct
 
-  - name: Upload component coverage
+  - name: Upload coverage
     image: plugins/codecov
     settings:
       required: true
@@ -112,15 +103,6 @@ steps:
     commands:
       - yarn test:cy:ch
 
-  - name: Upload integration coverage
-    image: plugins/codecov
-    settings:
-      required: true
-      token:
-        from_secret: codecov-token
-      paths:
-        - coverage/
-
   - name: Component tests
     image: cypress/included:8.5.0
     environment:
@@ -128,7 +110,7 @@ steps:
     commands:
       - yarn test:cy:ct:ch
 
-  - name: Upload component coverage
+  - name: Upload coverage
     image: plugins/codecov
     settings:
       required: true
@@ -167,15 +149,6 @@ steps:
     commands:
       - yarn test:cy:ff
 
-  - name: Upload integration coverage
-    image: plugins/codecov
-    settings:
-      required: true
-      token:
-        from_secret: codecov-token
-      paths:
-        - coverage/
-
   - name: Component tests
     image: cypress/included:8.5.0
     environment:
@@ -183,7 +156,7 @@ steps:
     commands:
       - yarn test:cy:ct:ff
 
-  - name: Upload component coverage
+  - name: Upload coverage
     image: plugins/codecov
     settings:
       required: true
