@@ -4009,7 +4009,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@vue/compiler-dom@npm:3.2.20, @vue/compiler-dom@npm:^3.2.0, @vue/compiler-dom@npm:^3.2.19":
+"@vue/compiler-dom@npm:3.2.20, @vue/compiler-dom@npm:^3.2.0, @vue/compiler-dom@npm:^3.2.19, @vue/compiler-dom@npm:^3.2.20":
   version: 3.2.20
   resolution: "@vue/compiler-dom@npm:3.2.20"
   dependencies:
@@ -8570,6 +8570,7 @@ __metadata:
     "@typescript-eslint/parser": 4.33.0
     "@vitejs/plugin-vue": 1.9.3
     "@vue/compiler-core": ^3.2.20
+    "@vue/compiler-dom": ^3.2.20
     babel-loader: 8.2.2
     cypress: 8.5.0
     eslint: 7.32.0
