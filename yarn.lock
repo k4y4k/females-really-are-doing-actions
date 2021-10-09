@@ -3577,7 +3577,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/node@npm:*, @types/node@npm:^16.10.3":
+"@types/node@npm:*, @types/node@npm:16.10.3":
   version: 16.10.3
   resolution: "@types/node@npm:16.10.3"
   checksum: 3fd429bce8a4acb497dcc62b536782a5e87ccf7cd91d64a78b263ae5d66cb72bf84be9eeeff6f84ae0567b065a40b267caa66d311f9e094990a5847bbd168a29
@@ -3987,7 +3987,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@vue/compiler-core@npm:3.2.20, @vue/compiler-core@npm:^3.2.20":
+"@vue/compiler-core@npm:3.2.20":
   version: 3.2.20
   resolution: "@vue/compiler-core@npm:3.2.20"
   dependencies:
@@ -4009,7 +4009,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@vue/compiler-dom@npm:3.2.20, @vue/compiler-dom@npm:^3.2.0, @vue/compiler-dom@npm:^3.2.19, @vue/compiler-dom@npm:^3.2.20":
+"@vue/compiler-dom@npm:3.2.20, @vue/compiler-dom@npm:^3.2.0, @vue/compiler-dom@npm:^3.2.19":
   version: 3.2.20
   resolution: "@vue/compiler-dom@npm:3.2.20"
   dependencies:
@@ -7937,7 +7937,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-import-resolver-node@npm:^0.3.6":
+"eslint-import-resolver-node@npm:0.3.6, eslint-import-resolver-node@npm:^0.3.6":
   version: 0.3.6
   resolution: "eslint-import-resolver-node@npm:0.3.6"
   dependencies:
@@ -8565,17 +8565,17 @@ __metadata:
     "@storybook/addon-essentials": 6.4.0-beta.7
     "@storybook/addon-links": 6.4.0-beta.7
     "@storybook/vue3": 6.4.0-beta.7
-    "@types/node": ^16.10.3
+    "@types/node": 16.10.3
     "@typescript-eslint/eslint-plugin": 4.33.0
     "@typescript-eslint/parser": 4.33.0
     "@vitejs/plugin-vue": 1.9.3
-    "@vue/compiler-core": ^3.2.20
-    "@vue/compiler-dom": ^3.2.20
+    "@vue/compiler-core": 3.2.20
+    "@vue/compiler-dom": 3.2.20
     babel-loader: 8.2.2
     cypress: 8.5.0
     eslint: 7.32.0
     eslint-config-standard-with-typescript: latest
-    eslint-import-resolver-node: ^0.3.6
+    eslint-import-resolver-node: 0.3.6
     eslint-plugin-cypress: 2.12.1
     eslint-plugin-import: 2.24.2
     eslint-plugin-node: 11.1.0
@@ -8592,7 +8592,7 @@ __metadata:
     typescript: 4.4.3
     vite: 2.6.5
     vite-plugin-istanbul: 2.2.1
-    vscode-languageserver-textdocument: ^1.0.2
+    vscode-languageserver-textdocument: 1.0.2
     vue: 3.2.19
     vue-eslint-parser: 7.11.0
     vue-loader: 16.8.1
@@ -17473,7 +17473,7 @@ typescript@4.4.3:
   languageName: node
   linkType: hard
 
-"vscode-languageserver-textdocument@npm:^1.0.1, vscode-languageserver-textdocument@npm:^1.0.2":
+"vscode-languageserver-textdocument@npm:1.0.2, vscode-languageserver-textdocument@npm:^1.0.1":
   version: 1.0.2
   resolution: "vscode-languageserver-textdocument@npm:1.0.2"
   checksum: 2e29fdc819ed911a60d6ead59dfe385a335b7b4f512257e774cde482c2ac7880378650d85533e549743d04162aac6b9d9f1569282308e87d8390e238277ee6da
