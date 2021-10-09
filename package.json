@@ -29,6 +29,9 @@
     "test:cy:ff": "start-server-and-test 'yarn test:boot' http://localhost:5000 'yarn cy:run --browser firefox'"
   },
   "dependencies": {
+    "@vue/compiler-core": "^3.2.20",
+    "@vue/compiler-dom": "^3.2.20",
+    "vscode-languageserver-textdocument": "^1.0.2",
     "vue": "3.2.19"
   },
   "devDependencies": {
@@ -42,6 +45,7 @@
     "@storybook/addon-essentials": "6.4.0-beta.7",
     "@storybook/addon-links": "6.4.0-beta.7",
     "@storybook/vue3": "6.4.0-beta.7",
+    "@types/node": "^16.10.3",
     "@typescript-eslint/eslint-plugin": "4.33.0",
     "@typescript-eslint/parser": "4.33.0",
     "@vitejs/plugin-vue": "1.9.3",
@@ -49,6 +53,7 @@
     "cypress": "8.5.0",
     "eslint": "7.32.0",
     "eslint-config-standard-with-typescript": "latest",
+    "eslint-import-resolver-node": "^0.3.6",
     "eslint-plugin-cypress": "2.12.1",
     "eslint-plugin-import": "2.24.2",
     "eslint-plugin-node": "11.1.0",
