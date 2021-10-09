@@ -1,15 +1,21 @@
 {
   "extends": ["config:base", ":maintainLockFilesWeekly"],
-  "semanticCommits": "enabled",
-  "stabilityDays": 3,
-  "prCreation": "not-pending",
-  "labels": ["type: dependencies"],
+  "assignAutomerge": true,
+  "automerge": true,
+  "automergeComment": "bors: r+",
+  "automergeType": "pr-comment",
+  "commitMessageAction": "Update",
+  "commitMessagePrefix": "⬆️",
   "dependencyDashboard": true,
   "dependencyDashboardAutoclose": true,
   "dependencyDashboardFooter": "Wow! So FANCY! 💅🍷✨",
-  "commitMessagePrefix": "⬆️",
-  "commitMessageAction": "Update",
-  "major": { "automerge": false },
+  "labels": ["type: dependencies"],
+  "major": {
+    "automerge": false
+  },
+  "prCreation": "not-pending",
+  "semanticCommits": "enabled",
+  "stabilityDays": 3,
   "packageRules": [
     {
       "matchUpdateTypes": "pin",
