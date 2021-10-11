@@ -2,21 +2,9 @@ import { mount } from '@cypress/vue'
 import HelloWorld from './HelloWorld.vue'
 
 beforeEach(() => {
-  mount(HelloWorld, {
-    propsData: {
-      msg: 'Hello World',
-    },
-  })
+  mount(HelloWorld)
 })
 
 it('shows the header', () => {
-  cy.get('h1').contains('Hello World')
-})
-
-it('renders the counter', () => {
-  cy.get('button').contains('count is: 0')
-})
-
-it('increments counter when clicked', () => {
-  cy.get('button').click().contains('count is: 1')
+  cy.get('h1').contains('One Very Long Exasperated Sigh')
 })
