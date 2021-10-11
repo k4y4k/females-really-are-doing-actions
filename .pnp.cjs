@@ -64,6 +64,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["eslint-plugin-vue-a11y", "virtual:eb50b6e47afb688cbdaba3114186eca7b16f63be5d1995e714539e556909daf5f08f8effcecc84c509396018fbf61e4cfc9f0bb9e769a814291ad4cdffac8168#npm:0.0.31"],
             ["nyc", "npm:15.1.0"],
             ["prettier", "npm:2.4.1"],
+            ["pug", "npm:3.0.2"],
             ["sass", "npm:1.42.1"],
             ["start-server-and-test", "npm:1.14.0"],
             ["storybook-builder-vite", "virtual:eb50b6e47afb688cbdaba3114186eca7b16f63be5d1995e714539e556909daf5f08f8effcecc84c509396018fbf61e4cfc9f0bb9e769a814291ad4cdffac8168#npm:0.1.0"],
@@ -72,10 +73,12 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["typescript", "patch:typescript@npm%3A4.4.3#~builtin<compat/typescript>::version=4.4.3&hash=32657b"],
             ["vite", "virtual:eb50b6e47afb688cbdaba3114186eca7b16f63be5d1995e714539e556909daf5f08f8effcecc84c509396018fbf61e4cfc9f0bb9e769a814291ad4cdffac8168#npm:2.6.5"],
             ["vite-plugin-istanbul", "npm:2.2.1"],
+            ["vite-plugin-pug", "virtual:eb50b6e47afb688cbdaba3114186eca7b16f63be5d1995e714539e556909daf5f08f8effcecc84c509396018fbf61e4cfc9f0bb9e769a814291ad4cdffac8168#npm:0.3.0"],
             ["vscode-languageserver-textdocument", "npm:1.0.2"],
             ["vue", "npm:3.2.19"],
             ["vue-eslint-parser", "virtual:eb50b6e47afb688cbdaba3114186eca7b16f63be5d1995e714539e556909daf5f08f8effcecc84c509396018fbf61e4cfc9f0bb9e769a814291ad4cdffac8168#npm:7.11.0"],
             ["vue-loader", "virtual:eb50b6e47afb688cbdaba3114186eca7b16f63be5d1995e714539e556909daf5f08f8effcecc84c509396018fbf61e4cfc9f0bb9e769a814291ad4cdffac8168#npm:16.8.1"],
+            ["vue-router", "virtual:eb50b6e47afb688cbdaba3114186eca7b16f63be5d1995e714539e556909daf5f08f8effcecc84c509396018fbf61e4cfc9f0bb9e769a814291ad4cdffac8168#npm:4.0.11"],
             ["vue-tsc", "virtual:eb50b6e47afb688cbdaba3114186eca7b16f63be5d1995e714539e556909daf5f08f8effcecc84c509396018fbf61e4cfc9f0bb9e769a814291ad4cdffac8168#npm:0.28.0"]
           ],
           "linkType": "SOFT",
@@ -8811,6 +8814,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "HARD",
         }]
       ]],
+      ["@vue/devtools-api", [
+        ["npm:6.0.0-beta.19", {
+          "packageLocation": "./.yarn/cache/@vue-devtools-api-npm-6.0.0-beta.19-c8d7abb885-2eecb70965.zip/node_modules/@vue/devtools-api/",
+          "packageDependencies": [
+            ["@vue/devtools-api", "npm:6.0.0-beta.19"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
       ["@vue/reactivity", [
         ["npm:3.2.19", {
           "packageLocation": "./.yarn/cache/@vue-reactivity-npm-3.2.19-eb73d92971-e26769406b.zip/node_modules/@vue/reactivity/",
@@ -14296,6 +14308,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["eslint-plugin-vue-a11y", "virtual:eb50b6e47afb688cbdaba3114186eca7b16f63be5d1995e714539e556909daf5f08f8effcecc84c509396018fbf61e4cfc9f0bb9e769a814291ad4cdffac8168#npm:0.0.31"],
             ["nyc", "npm:15.1.0"],
             ["prettier", "npm:2.4.1"],
+            ["pug", "npm:3.0.2"],
             ["sass", "npm:1.42.1"],
             ["start-server-and-test", "npm:1.14.0"],
             ["storybook-builder-vite", "virtual:eb50b6e47afb688cbdaba3114186eca7b16f63be5d1995e714539e556909daf5f08f8effcecc84c509396018fbf61e4cfc9f0bb9e769a814291ad4cdffac8168#npm:0.1.0"],
@@ -14304,10 +14317,12 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["typescript", "patch:typescript@npm%3A4.4.3#~builtin<compat/typescript>::version=4.4.3&hash=32657b"],
             ["vite", "virtual:eb50b6e47afb688cbdaba3114186eca7b16f63be5d1995e714539e556909daf5f08f8effcecc84c509396018fbf61e4cfc9f0bb9e769a814291ad4cdffac8168#npm:2.6.5"],
             ["vite-plugin-istanbul", "npm:2.2.1"],
+            ["vite-plugin-pug", "virtual:eb50b6e47afb688cbdaba3114186eca7b16f63be5d1995e714539e556909daf5f08f8effcecc84c509396018fbf61e4cfc9f0bb9e769a814291ad4cdffac8168#npm:0.3.0"],
             ["vscode-languageserver-textdocument", "npm:1.0.2"],
             ["vue", "npm:3.2.19"],
             ["vue-eslint-parser", "virtual:eb50b6e47afb688cbdaba3114186eca7b16f63be5d1995e714539e556909daf5f08f8effcecc84c509396018fbf61e4cfc9f0bb9e769a814291ad4cdffac8168#npm:7.11.0"],
             ["vue-loader", "virtual:eb50b6e47afb688cbdaba3114186eca7b16f63be5d1995e714539e556909daf5f08f8effcecc84c509396018fbf61e4cfc9f0bb9e769a814291ad4cdffac8168#npm:16.8.1"],
+            ["vue-router", "virtual:eb50b6e47afb688cbdaba3114186eca7b16f63be5d1995e714539e556909daf5f08f8effcecc84c509396018fbf61e4cfc9f0bb9e769a814291ad4cdffac8168#npm:4.0.11"],
             ["vue-tsc", "virtual:eb50b6e47afb688cbdaba3114186eca7b16f63be5d1995e714539e556909daf5f08f8effcecc84c509396018fbf61e4cfc9f0bb9e769a814291ad4cdffac8168#npm:0.28.0"]
           ],
           "linkType": "SOFT",
@@ -24663,6 +24678,29 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "HARD",
         }]
       ]],
+      ["vite-plugin-pug", [
+        ["npm:0.3.0", {
+          "packageLocation": "./.yarn/cache/vite-plugin-pug-npm-0.3.0-a0b9e41c17-54080775fc.zip/node_modules/vite-plugin-pug/",
+          "packageDependencies": [
+            ["vite-plugin-pug", "npm:0.3.0"]
+          ],
+          "linkType": "SOFT",
+        }],
+        ["virtual:eb50b6e47afb688cbdaba3114186eca7b16f63be5d1995e714539e556909daf5f08f8effcecc84c509396018fbf61e4cfc9f0bb9e769a814291ad4cdffac8168#npm:0.3.0", {
+          "packageLocation": "./.yarn/__virtual__/vite-plugin-pug-virtual-7231dc494c/0/cache/vite-plugin-pug-npm-0.3.0-a0b9e41c17-54080775fc.zip/node_modules/vite-plugin-pug/",
+          "packageDependencies": [
+            ["vite-plugin-pug", "virtual:eb50b6e47afb688cbdaba3114186eca7b16f63be5d1995e714539e556909daf5f08f8effcecc84c509396018fbf61e4cfc9f0bb9e769a814291ad4cdffac8168#npm:0.3.0"],
+            ["@types/vite", null],
+            ["pug", "npm:3.0.2"],
+            ["vite", "virtual:eb50b6e47afb688cbdaba3114186eca7b16f63be5d1995e714539e556909daf5f08f8effcecc84c509396018fbf61e4cfc9f0bb9e769a814291ad4cdffac8168#npm:2.6.5"]
+          ],
+          "packagePeers": [
+            "@types/vite",
+            "vite"
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
       ["vm-browserify", [
         ["npm:1.1.2", {
           "packageLocation": "./.yarn/cache/vm-browserify-npm-1.1.2-f96404b36f-10a1c50aab.zip/node_modules/vm-browserify/",
@@ -25050,6 +25088,29 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packagePeers": [
             "@types/webpack",
             "webpack"
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
+      ["vue-router", [
+        ["npm:4.0.11", {
+          "packageLocation": "./.yarn/cache/vue-router-npm-4.0.11-4caea6b4a0-0b78314daf.zip/node_modules/vue-router/",
+          "packageDependencies": [
+            ["vue-router", "npm:4.0.11"]
+          ],
+          "linkType": "SOFT",
+        }],
+        ["virtual:eb50b6e47afb688cbdaba3114186eca7b16f63be5d1995e714539e556909daf5f08f8effcecc84c509396018fbf61e4cfc9f0bb9e769a814291ad4cdffac8168#npm:4.0.11", {
+          "packageLocation": "./.yarn/__virtual__/vue-router-virtual-9d1bd84856/0/cache/vue-router-npm-4.0.11-4caea6b4a0-0b78314daf.zip/node_modules/vue-router/",
+          "packageDependencies": [
+            ["vue-router", "virtual:eb50b6e47afb688cbdaba3114186eca7b16f63be5d1995e714539e556909daf5f08f8effcecc84c509396018fbf61e4cfc9f0bb9e769a814291ad4cdffac8168#npm:4.0.11"],
+            ["@types/vue", null],
+            ["@vue/devtools-api", "npm:6.0.0-beta.19"],
+            ["vue", "npm:3.2.19"]
+          ],
+          "packagePeers": [
+            "@types/vue",
+            "vue"
           ],
           "linkType": "HARD",
         }]
