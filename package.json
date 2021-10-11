@@ -31,7 +31,7 @@
   "dependencies": {
     "@vue/compiler-core": "3.2.20",
     "@vue/compiler-dom": "3.2.20",
-    "vscode-languageserver-textdocument": "1.0.2",
+    "postcss": "^8.3.9",
     "vue": "3.2.19",
     "vue-router": "4"
   },
@@ -62,6 +62,7 @@
     "eslint-plugin-vue": "7.19.1",
     "eslint-plugin-vue-a11y": "0.0.31",
     "nyc": "15.1.0",
+    "postcss-windicss": "^1.0.0",
     "prettier": "2.4.1",
     "pug": "^3.0.2",
     "sass": "1.42.1",
@@ -73,9 +74,11 @@
     "vite": "2.6.5",
     "vite-plugin-istanbul": "2.2.1",
     "vite-plugin-pug": "^0.3.0",
+    "vscode-languageserver-textdocument": "1.0.2",
     "vue-eslint-parser": "7.11.0",
     "vue-loader": "16.8.1",
-    "vue-tsc": "0.28.0"
+    "vue-tsc": "0.28.0",
+    "windicss": "^3.1.9"
   },
   "packageManager": "yarn@3.0.2"
 }

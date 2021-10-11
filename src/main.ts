@@ -3,6 +3,7 @@ import HelloWorld from './components/HelloWorld.vue'
 import { createWebHistory, createRouter } from 'vue-router'
 import App from './App.vue'
 import Purple from './components/Purple.vue'
+import './main.css'
 
 const routes = [
   { path: '/', component: HelloWorld },

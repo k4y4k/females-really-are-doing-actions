@@ -13,20 +13,3 @@ export default defineComponent({
   name: 'Nav',
 })
 </script>
-
-<style scoped lang="scss">
-nav {
-  background: black;
-  color: white;
-  font-family: monospace;
-
-  h1 {
-    padding: 10px;
-    margin: 10px;
-  }
-
-  a {
-    color: white;
-  }
-}
-</style>

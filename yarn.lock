@@ -12,6 +12,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@antfu/utils@npm:^0.1.6":
+  version: 0.1.7
+  resolution: "@antfu/utils@npm:0.1.7"
+  checksum: a4b704c2e5a59f5d2e2e17817df95a86e563cc26ca2304a6cefe68137082224d231bcce7235e87c85a1c7fa958a7f40b0f9e6c474d6fd7b340b67b161ea6d1d0
+  languageName: node
+  linkType: hard
+
 "@babel/code-frame@npm:7.10.4":
   version: 7.10.4
   resolution: "@babel/code-frame@npm:7.10.4"
@@ -4363,6 +4370,21 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@windicss/plugin-utils@npm:^0.16.0":
+  version: 0.16.7
+  resolution: "@windicss/plugin-utils@npm:0.16.7"
+  dependencies:
+    "@antfu/utils": ^0.1.6
+    debug: ^4.3.2
+    fast-glob: ^3.2.5
+    jiti: ^1.9.2
+    magic-string: ^0.25.7
+    micromatch: ^4.0.4
+    windicss: ^3.0.12
+  checksum: 0df8896c8390f8f1dd27e5d9640927cca12256d61f4ff102df347111ffb38ea56f20931b55d9e3e20091385869d24dcd5caaa46e3397dfd330c0b190ebace55d
+  languageName: node
+  linkType: hard
+
 "@xtuc/ieee754@npm:^1.2.0":
   version: 1.2.0
   resolution: "@xtuc/ieee754@npm:1.2.0"
@@ -6067,7 +6089,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"chokidar@npm:>=3.0.0 <4.0.0, chokidar@npm:^3.4.1, chokidar@npm:^3.4.2":
+"chokidar@npm:>=3.0.0 <4.0.0, chokidar@npm:^3.4.1, chokidar@npm:^3.4.2, chokidar@npm:^3.5.1":
   version: 3.5.2
   resolution: "chokidar@npm:3.5.2"
   dependencies:
@@ -8432,6 +8454,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"exit-hook@npm:^2.2.1":
+  version: 2.2.1
+  resolution: "exit-hook@npm:2.2.1"
+  checksum: 1aa8359b6c5590a012d6cadf9cd337d227291bfcaa8970dc585d73dffef0582af34ed8ac56f6164f8979979fb417cff1eb49f03cdfd782f9332a30c773f0ada0
+  languageName: node
+  linkType: hard
+
 "expand-brackets@npm:^2.1.4":
   version: 2.1.4
   resolution: "expand-brackets@npm:2.1.4"
@@ -8590,6 +8619,8 @@ __metadata:
     eslint-plugin-vue: 7.19.1
     eslint-plugin-vue-a11y: 0.0.31
     nyc: 15.1.0
+    postcss: ^8.3.9
+    postcss-windicss: ^1.0.0
     prettier: 2.4.1
     pug: ^3.0.2
     sass: 1.42.1
@@ -8607,6 +8638,7 @@ __metadata:
     vue-loader: 16.8.1
     vue-router: 4
     vue-tsc: 0.28.0
+    windicss: ^3.1.9
   languageName: unknown
   linkType: soft
 
@@ -11078,6 +11110,15 @@ fsevents@^1.2.7:
     merge-stream: ^2.0.0
     supports-color: ^7.0.0
   checksum: f9afa3b88e3f12027901e4964ba3ff048285b5783b5225cab28fac25b4058cea8ad54001e9a1577ee2bed125fac3ccf5c80dc507b120300cc1bbcb368796533e
+  languageName: node
+  linkType: hard
+
+"jiti@npm:^1.9.2":
+  version: 1.12.6
+  resolution: "jiti@npm:1.12.6"
+  bin:
+    jiti: bin/jiti.js
+  checksum: 6d5c0be3566ea0695b8c66c1a4453cf062739181ab3cd7a6fa440e54c6b9bcf63f08b7cbfc86b7ccf25ff445e75174b76177b4f31792cfe3bbbc8ddf3a38a4f6
   languageName: node
   linkType: hard
 
@@ -13650,6 +13691,21 @@ fsevents@^1.2.7:
   languageName: node
   linkType: hard
 
+"postcss-windicss@npm:^1.0.0":
+  version: 1.0.0
+  resolution: "postcss-windicss@npm:1.0.0"
+  dependencies:
+    "@windicss/plugin-utils": ^0.16.0
+    chokidar: ^3.5.1
+    debug: ^4.3.2
+    exit-hook: ^2.2.1
+    windicss: ^3.0.12
+  peerDependencies:
+    postcss: ^8.0.0
+  checksum: 53c4b7c2b51a60f25932747a7fa01ff373db45283a4d9450099f491252af1e5ef4efee6853672d9d25e2afa2130bb03526427596382b933dae3ad46a7a639c30
+  languageName: node
+  linkType: hard
+
 "postcss@npm:^7.0.14, postcss@npm:^7.0.2, postcss@npm:^7.0.21, postcss@npm:^7.0.26, postcss@npm:^7.0.32, postcss@npm:^7.0.35, postcss@npm:^7.0.36, postcss@npm:^7.0.5, postcss@npm:^7.0.6":
   version: 7.0.39
   resolution: "postcss@npm:7.0.39"
@@ -13660,7 +13716,7 @@ fsevents@^1.2.7:
   languageName: node
   linkType: hard
 
-"postcss@npm:^8.1.10, postcss@npm:^8.3.8":
+"postcss@npm:^8.1.10, postcss@npm:^8.3.8, postcss@npm:^8.3.9":
   version: 8.3.9
   resolution: "postcss@npm:8.3.9"
   dependencies:
@@ -18013,6 +18069,15 @@ typescript@4.4.3:
   dependencies:
     string-width: ^4.0.0
   checksum: 03db6c9d0af9329c37d74378ff1d91972b12553c7d72a6f4e8525fe61563fa7adb0b9d6e8d546b7e059688712ea874edd5ded475999abdeedf708de9849310e0
+  languageName: node
+  linkType: hard
+
+"windicss@npm:^3.0.12, windicss@npm:^3.1.9":
+  version: 3.1.9
+  resolution: "windicss@npm:3.1.9"
+  bin:
+    windicss: cli/index.js
+  checksum: 7c9c1ac23b5125315b215ed92c67fb4cb2db0a4322d86ac15c11e9cea2313ff75698833a9d7bff2ee17a95f3bee5ca7cd1b19f6660dbbff8cc64815545f6b30a
   languageName: node
   linkType: hard
 
