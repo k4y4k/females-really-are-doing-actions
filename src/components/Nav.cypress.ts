@@ -6,5 +6,5 @@ beforeEach(() => mount(Nav, { stylesheet }))
 
 // we test for clicks in integration tests I guess
 it('shows the home link', () => {
-  cy.get('nav').get('router-link h1').contains('Home')
+  cy.get('nav').get('router-link h1').contains('Complex Compendium')
 })

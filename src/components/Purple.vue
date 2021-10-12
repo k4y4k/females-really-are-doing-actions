@@ -4,7 +4,7 @@ div.container
   //- FIXME: don't hardcode this
   h1(data-testid="hero-name").font-bold Purple
 #hero-container
-  img(:src=" `${imageUrl}`" id="purple-hero" data-testid="hero-image")
+  img(:src="`${imageUrl}`" id="purple-hero" data-testid="hero-image")
 Whobar
 </template>
 
@@ -23,6 +23,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+// FIXME: use Vite font plugin
 @import url('https://fonts.googleapis.com/css2?family=Jost:wght@700&display=swap');
 
 #hero-container {
