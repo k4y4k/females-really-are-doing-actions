@@ -98,8 +98,14 @@ trigger:
 steps:
   - name: install
     image: cypress/included:8.5.0
+    environment:
+      IMG_FETCH_CMD:
+        from_secret: IMG_FETCH_CMD
     commands:
       - yarn
+      - cd src/img/
+      - $IMG_FETCH_CMD
+      - tar -xzf images.tar.gz --strip 1
 
   - name: Integration tests
     image: cypress/included:8.5.0
@@ -144,8 +150,14 @@ trigger:
 steps:
   - name: install
     image: cypress/included:8.5.0
+    environment:
+      IMG_FETCH_CMD:
+        from_secret: IMG_FETCH_CMD
     commands:
       - yarn
+      - cd src/img/
+      - $IMG_FETCH_CMD
+      - tar -xzf images.tar.gz --strip 1
 
   - name: Integration tests
     image: cypress/included:8.5.0
@@ -193,8 +205,14 @@ trigger:
 steps:
   - name: install
     image: node:16
+    environment:
+      IMG_FETCH_CMD:
+        from_secret: IMG_FETCH_CMD
     commands:
       - yarn
+      - cd src/img/
+      - $IMG_FETCH_CMD
+      - tar -xzf images.tar.gz --strip 1
 
   - name: build
     image: node:16
