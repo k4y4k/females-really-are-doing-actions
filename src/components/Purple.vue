@@ -1,17 +1,68 @@
 <template lang="pug">
 Nav
-h1 purple
+div.container
+  //- FIXME: don't hardcode this
+  h1.font-bold Purple
+#hero-container
+  img(:src=" `${imageUrl}`" id="purple-hero")
+Whobar
 </template>
-
-<style lang="scss" scoped>
-h1 {
-  font-size: 3vh;
-  font-weight: 800;
-}
-</style>
 
 <script lang="ts">
 import Nav from './Nav.vue'
+// TODO: Vite image plugin
+import imgUrl from '../img/export/Purple.png'
+import Whobar from './Whobar.vue'
 
-export default { components: { Nav } }
+export default {
+  components: { Nav, Whobar },
+  computed: {
+    imageUrl: () => imgUrl,
+  },
+}
 </script>
+
+<style lang="scss" scoped>
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@700&display=swap');
+
+#hero-container {
+  position: absolute;
+  top: 60px;
+  right: 2vw;
+  z-index: -10;
+}
+
+#purple-hero {
+  height: 133vh;
+}
+
+.container {
+  height: 80vh;
+  display: flex;
+  flex-wrap: wrap;
+  width: 80vw;
+  align-content: center;
+}
+
+h1 {
+  // prettier-ignore
+  font-family:
+    'Jost',
+    -apple-system,
+    BlinkMacSystemFont,
+    'Segoe UI',
+    Roboto,
+    Oxygen,
+    Ubuntu,
+    Cantarell,
+    'Open Sans',
+    'Helvetica Neue',
+    sans-serif;
+  font-size: 30vh;
+
+  /* FIXME: not a replacement for a custom kerned .svg or something */
+  letter-spacing: -30px;
+  line-height: 200px;
+  z-index: -20;
+}
+</style>

@@ -1,8 +1,7 @@
 <template lang="pug">
-nav.flex.flex-row.flex-wrap.bg-gray-300.h-10.p-2(class='sm:flex-nowrap')
-  .flex.w-full(class='sm:w-auto')
-    router-link#title.block.whitespace-nowrap.mx-2(to='/')
-      h1.font-bold Home
+nav.flex.flex-row.flex-wrap.bg-transparent.text-black.justify-center.absolute.top-0.w-full
+  router-link#title.block.whitespace-nowrap.mx-2(to='/').py-3
+    h1.font-bold Complex Compendium
 
 </template>
 
@@ -13,3 +12,9 @@ export default defineComponent({
   name: 'Nav',
 })
 </script>
+
+<style lang="scss" scoped>
+nav {
+  font-size: 16px;
+}
+</style>
