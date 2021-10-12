@@ -2,9 +2,9 @@
 Nav
 div.container
   //- FIXME: don't hardcode this
-  h1.font-bold Purple
+  h1(data-testid="hero-name").font-bold Purple
 #hero-container
-  img(:src=" `${imageUrl}`" id="purple-hero")
+  img(:src=" `${imageUrl}`" id="purple-hero" data-testid="hero-image")
 Whobar
 </template>
 

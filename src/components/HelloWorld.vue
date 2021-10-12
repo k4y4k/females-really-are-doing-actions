@@ -6,11 +6,12 @@ export default {
 }
 </script>
 
-<template>
-  <Nav></Nav>
-  <h1>One Very Long Exasperated Sigh</h1>
+<template lang="pug">
+Nav/
+main.mt-12
+<h1>One Very Long Exasperated Sigh</h1>
 
-  <router-link to="/purple"> Onto the show! </router-link>
+<router-link to="/purple"> Onto the show! </router-link>
 </template>
 
 <style lang="scss" scoped>
