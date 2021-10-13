@@ -8619,10 +8619,10 @@ __metadata:
     eslint-plugin-vue: 7.19.1
     eslint-plugin-vue-a11y: 0.0.31
     nyc: 15.1.0
-    postcss: ^8.3.9
-    postcss-windicss: ^1.0.0
+    postcss: 8.3.9
+    postcss-windicss: 1.0.0
     prettier: 2.4.1
-    pug: ^3.0.2
+    pug: 3.0.2
     sass: 1.42.1
     start-server-and-test: 1.14.0
     storybook-builder-vite: 0.1.0
@@ -8631,14 +8631,14 @@ __metadata:
     typescript: 4.4.3
     vite: 2.6.5
     vite-plugin-istanbul: 2.2.1
-    vite-plugin-pug: ^0.3.0
+    vite-plugin-pug: 0.3.0
     vscode-languageserver-textdocument: 1.0.2
     vue: 3.2.19
     vue-eslint-parser: 7.11.0
     vue-loader: 16.8.1
-    vue-router: 4
+    vue-router: 4.0.11
     vue-tsc: 0.28.0
-    windicss: ^3.1.9
+    windicss: 3.1.9
   languageName: unknown
   linkType: soft
 
@@ -13691,7 +13691,7 @@ fsevents@^1.2.7:
   languageName: node
   linkType: hard
 
-"postcss-windicss@npm:^1.0.0":
+"postcss-windicss@npm:1.0.0":
   version: 1.0.0
   resolution: "postcss-windicss@npm:1.0.0"
   dependencies:
@@ -13706,17 +13706,7 @@ fsevents@^1.2.7:
   languageName: node
   linkType: hard
 
-"postcss@npm:^7.0.14, postcss@npm:^7.0.2, postcss@npm:^7.0.21, postcss@npm:^7.0.26, postcss@npm:^7.0.32, postcss@npm:^7.0.35, postcss@npm:^7.0.36, postcss@npm:^7.0.5, postcss@npm:^7.0.6":
-  version: 7.0.39
-  resolution: "postcss@npm:7.0.39"
-  dependencies:
-    picocolors: ^0.2.1
-    source-map: ^0.6.1
-  checksum: 4ac793f506c23259189064bdc921260d869a115a82b5e713973c5af8e94fbb5721a5cc3e1e26840500d7e1f1fa42a209747c5b1a151918a9bc11f0d7ed9048e3
-  languageName: node
-  linkType: hard
-
-"postcss@npm:^8.1.10, postcss@npm:^8.3.8, postcss@npm:^8.3.9":
+"postcss@npm:8.3.9, postcss@npm:^8.1.10, postcss@npm:^8.3.8":
   version: 8.3.9
   resolution: "postcss@npm:8.3.9"
   dependencies:
@@ -13724,6 +13714,16 @@ fsevents@^1.2.7:
     picocolors: ^0.2.1
     source-map-js: ^0.6.2
   checksum: b64d0e59bc027b2f09e5a84ca32b4f0620553812110e42295a79fd0e6ea664779e575c2d5e8d35a1b0804f0933ec878404c6e161e008b5bc51cba44eaef216ef
+  languageName: node
+  linkType: hard
+
+"postcss@npm:^7.0.14, postcss@npm:^7.0.2, postcss@npm:^7.0.21, postcss@npm:^7.0.26, postcss@npm:^7.0.32, postcss@npm:^7.0.35, postcss@npm:^7.0.36, postcss@npm:^7.0.5, postcss@npm:^7.0.6":
+  version: 7.0.39
+  resolution: "postcss@npm:7.0.39"
+  dependencies:
+    picocolors: ^0.2.1
+    source-map: ^0.6.1
+  checksum: 4ac793f506c23259189064bdc921260d869a115a82b5e713973c5af8e94fbb5721a5cc3e1e26840500d7e1f1fa42a209747c5b1a151918a9bc11f0d7ed9048e3
   languageName: node
   linkType: hard
 
@@ -14092,7 +14092,7 @@ fsevents@^1.2.7:
   languageName: node
   linkType: hard
 
-"pug@npm:^3.0.2":
+"pug@npm:3.0.2, pug@npm:^3.0.2":
   version: 3.0.2
   resolution: "pug@npm:3.0.2"
   dependencies:
@@ -17442,7 +17442,7 @@ typescript@4.4.3:
   languageName: node
   linkType: hard
 
-"vite-plugin-pug@npm:^0.3.0":
+"vite-plugin-pug@npm:0.3.0":
   version: 0.3.0
   resolution: "vite-plugin-pug@npm:0.3.0"
   dependencies:
@@ -17762,7 +17762,7 @@ typescript@4.4.3:
   languageName: node
   linkType: hard
 
-"vue-router@npm:4":
+"vue-router@npm:4.0.11":
   version: 4.0.11
   resolution: "vue-router@npm:4.0.11"
   dependencies:
@@ -18072,7 +18072,7 @@ typescript@4.4.3:
   languageName: node
   linkType: hard
 
-"windicss@npm:^3.0.12, windicss@npm:^3.1.9":
+"windicss@npm:3.1.9, windicss@npm:^3.0.12":
   version: 3.1.9
   resolution: "windicss@npm:3.1.9"
   bin:
