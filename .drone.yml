@@ -45,7 +45,7 @@ trigger:
 
 steps:
   - name: install
-    image: cypress/included:8.5.0
+    image: cypress/included:8.6.0
     environment:
       IMG_FETCH_CMD:
         from_secret: IMG_FETCH_CMD
@@ -56,14 +56,14 @@ steps:
       - tar -xzf images.tar.gz --strip 1
 
   - name: Integration tests
-    image: cypress/included:8.5.0
+    image: cypress/included:8.6.0
     environment:
       CYPRESS_COVERAGE: true
     commands:
       - yarn test:cy
 
   - name: Component tests
-    image: cypress/included:8.5.0
+    image: cypress/included:8.6.0
     environment:
       CYPRESS_COVERAGE: true
     commands:
@@ -97,7 +97,7 @@ trigger:
 
 steps:
   - name: install
-    image: cypress/included:8.5.0
+    image: cypress/included:8.6.0
     environment:
       IMG_FETCH_CMD:
         from_secret: IMG_FETCH_CMD
@@ -108,14 +108,14 @@ steps:
       - tar -xzf images.tar.gz --strip 1
 
   - name: Integration tests
-    image: cypress/included:8.5.0
+    image: cypress/included:8.6.0
     environment:
       CYPRESS_COVERAGE: true
     commands:
       - yarn test:cy:ch
 
   - name: Component tests
-    image: cypress/included:8.5.0
+    image: cypress/included:8.6.0
     environment:
       CYPRESS_COVERAGE: true
     commands:
@@ -149,7 +149,7 @@ trigger:
 
 steps:
   - name: install
-    image: cypress/included:8.5.0
+    image: cypress/included:8.6.0
     environment:
       IMG_FETCH_CMD:
         from_secret: IMG_FETCH_CMD
@@ -160,14 +160,14 @@ steps:
       - tar -xzf images.tar.gz --strip 1
 
   - name: Integration tests
-    image: cypress/included:8.5.0
+    image: cypress/included:8.6.0
     environment:
       CYPRESS_COVERAGE: true
     commands:
       - yarn test:cy:ff
 
   - name: Component tests
-    image: cypress/included:8.5.0
+    image: cypress/included:8.6.0
     environment:
       CYPRESS_COVERAGE: true
     commands:
