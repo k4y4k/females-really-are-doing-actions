@@ -5,3 +5,4 @@ dist
 coverage
 .pnp.cjs
 src/img
+storybook-static
