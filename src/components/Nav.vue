@@ -1,7 +1,7 @@
 <template lang="pug">
-nav.flex.flex-row.flex-wrap.bg-transparent.text-black.justify-center.absolute.top-0.w-full
-  router-link#title.block.whitespace-nowrap.mx-2(to='/').py-3
-    h1.font-bold Complex Compendium
+nav
+  router-link#title(to='/')
+    h1 Complex Compendium
 
 </template>
 
@@ -15,6 +15,14 @@ export default defineComponent({
 
 <style lang="scss" scoped>
 nav {
-  font-size: 16px;
+  @apply flex flex-row flex-wrap bg-transparent text-black justify-center w-full h-12;
+}
+
+router-link {
+  @apply block whitespace-nowrap;
+}
+
+h1 {
+  @apply font-bold hover:tracking-widest transition-all  m-3;
 }
 </style>

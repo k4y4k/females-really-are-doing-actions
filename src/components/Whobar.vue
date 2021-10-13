@@ -1,5 +1,7 @@
 <template lang="pug">
+
 section.w-full.bg-black.text-white.p-3.monospace(data-testid="info-bar")
+
   span(data-testid="who-icon" id="who-icon").w-10.inline-block.mx-5.h-auto 💌
   p(data-testid="who-name" id="who-name").tracking-widest.inline-block {{ uppercase }}
 
@@ -16,11 +18,17 @@ section(data-testid="info-more-from" id="info-more-from").my-8.bg-black.text-whi
 
   div.flex.flex-row.overflow-hidden(data-testid="rogues-gallery")
     img(v-for="i in Array(3).fill('')" :src="`${moreImage}`").more-image.w-40.m-3.inline
+
+NextPrevButtons
+
 </template>
 
 <script lang="ts">
 import steelBlueImg from '../img/export/pre_Steel_Blue.png'
+import NextPrevButtons from './NextPrevButtons.vue'
+
 export default {
+  components: { NextPrevButtons },
   computed: {
     // FIXME: don't hardcode this
     uppercase: () => 'PURPLE',

@@ -1,11 +1,14 @@
 <template lang="pug">
-Nav
+Nav/
+
 div.container
   //- FIXME: don't hardcode this
   h1(data-testid="hero-name").font-bold Purple
 #hero-container
   img(:src="`${imageUrl}`" id="purple-hero" data-testid="hero-image")
+
 Whobar
+
 </template>
 
 <script lang="ts">
@@ -13,9 +16,10 @@ import Nav from './Nav.vue'
 // TODO: Vite image plugin
 import imgUrl from '../img/export/Purple.png'
 import Whobar from './Whobar.vue'
+import NextPrevButtons from './NextPrevButtons.vue'
 
 export default {
-  components: { Nav, Whobar },
+  components: { Nav, Whobar, NextPrevButtons },
   computed: {
     imageUrl: () => imgUrl,
   },
@@ -38,7 +42,7 @@ export default {
 }
 
 .container {
-  height: 80vh;
+  height: 87vh;
   display: flex;
   flex-wrap: wrap;
   width: 80vw;

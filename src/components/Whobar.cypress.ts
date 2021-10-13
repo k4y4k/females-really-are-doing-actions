@@ -31,4 +31,9 @@ describe('the extended bar', () => {
 
     cy.get('[data-testid=rogues-gallery]').children().should('have.length', '3')
   })
+
+  it('lets you see alphabetically next and previous', () => {
+    cy.get('[data-testid=left-button]')
+    cy.get('[data-testid=right-button]')
+  })
 })
