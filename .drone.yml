@@ -185,7 +185,7 @@ steps:
 ---
 kind: pipeline
 type: docker
-name: build
+name: Vite Build
 
 depends_on:
   - Cypress (Electron)
@@ -222,10 +222,48 @@ steps:
 ---
 kind: pipeline
 type: docker
+name: Storybook
+
+depends_on:
+  - Cypress (Electron)
+  - Cypress (Firefox)
+  - Cypress (Chrome)
+  - Preflight
+
+trigger:
+  branch:
+    exclude:
+      - gh-pages
+      - github-pages
+      - staging.tmp
+      - trying.tmp
+      - staging-squash-merge.tmp
+
+steps:
+  - name: install
+    image: node:16
+    environment:
+      IMG_FETCH_CMD:
+        from_secret: IMG_FETCH_CMD
+    commands:
+      - yarn
+      - cd src/img/
+      - $IMG_FETCH_CMD
+      - tar -xzf images.tar.gz --strip 1
+
+  - name: build
+    image: node:16
+    commands:
+      - yarn storybook:build
+
+---
+kind: pipeline
+type: docker
 name: discord
 
 depends_on:
-  - build
+  - Vite Build
+  - Storybook
 
 clone:
   disable: true
