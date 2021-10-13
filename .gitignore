@@ -14,3 +14,8 @@ coverage
 !.yarn/releases
 !.yarn/sdks
 !.yarn/versions
+
+# external images
+src/img
+# cypress takes screencaps on test failure
+cypress/screenshots

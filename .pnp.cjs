@@ -63,7 +63,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["eslint-plugin-vue", "virtual:eb50b6e47afb688cbdaba3114186eca7b16f63be5d1995e714539e556909daf5f08f8effcecc84c509396018fbf61e4cfc9f0bb9e769a814291ad4cdffac8168#npm:7.19.1"],
             ["eslint-plugin-vue-a11y", "virtual:eb50b6e47afb688cbdaba3114186eca7b16f63be5d1995e714539e556909daf5f08f8effcecc84c509396018fbf61e4cfc9f0bb9e769a814291ad4cdffac8168#npm:0.0.31"],
             ["nyc", "npm:15.1.0"],
+            ["postcss", "npm:8.3.9"],
+            ["postcss-windicss", "virtual:eb50b6e47afb688cbdaba3114186eca7b16f63be5d1995e714539e556909daf5f08f8effcecc84c509396018fbf61e4cfc9f0bb9e769a814291ad4cdffac8168#npm:1.0.0"],
             ["prettier", "npm:2.4.1"],
+            ["pug", "npm:3.0.2"],
             ["sass", "npm:1.42.1"],
             ["start-server-and-test", "npm:1.14.0"],
             ["storybook-builder-vite", "virtual:eb50b6e47afb688cbdaba3114186eca7b16f63be5d1995e714539e556909daf5f08f8effcecc84c509396018fbf61e4cfc9f0bb9e769a814291ad4cdffac8168#npm:0.1.0"],
@@ -72,11 +75,14 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["typescript", "patch:typescript@npm%3A4.4.3#~builtin<compat/typescript>::version=4.4.3&hash=32657b"],
             ["vite", "virtual:eb50b6e47afb688cbdaba3114186eca7b16f63be5d1995e714539e556909daf5f08f8effcecc84c509396018fbf61e4cfc9f0bb9e769a814291ad4cdffac8168#npm:2.6.5"],
             ["vite-plugin-istanbul", "npm:2.2.1"],
+            ["vite-plugin-pug", "virtual:eb50b6e47afb688cbdaba3114186eca7b16f63be5d1995e714539e556909daf5f08f8effcecc84c509396018fbf61e4cfc9f0bb9e769a814291ad4cdffac8168#npm:0.3.0"],
             ["vscode-languageserver-textdocument", "npm:1.0.2"],
             ["vue", "npm:3.2.19"],
             ["vue-eslint-parser", "virtual:eb50b6e47afb688cbdaba3114186eca7b16f63be5d1995e714539e556909daf5f08f8effcecc84c509396018fbf61e4cfc9f0bb9e769a814291ad4cdffac8168#npm:7.11.0"],
             ["vue-loader", "virtual:eb50b6e47afb688cbdaba3114186eca7b16f63be5d1995e714539e556909daf5f08f8effcecc84c509396018fbf61e4cfc9f0bb9e769a814291ad4cdffac8168#npm:16.8.1"],
-            ["vue-tsc", "virtual:eb50b6e47afb688cbdaba3114186eca7b16f63be5d1995e714539e556909daf5f08f8effcecc84c509396018fbf61e4cfc9f0bb9e769a814291ad4cdffac8168#npm:0.28.0"]
+            ["vue-router", "virtual:eb50b6e47afb688cbdaba3114186eca7b16f63be5d1995e714539e556909daf5f08f8effcecc84c509396018fbf61e4cfc9f0bb9e769a814291ad4cdffac8168#npm:4.0.11"],
+            ["vue-tsc", "virtual:eb50b6e47afb688cbdaba3114186eca7b16f63be5d1995e714539e556909daf5f08f8effcecc84c509396018fbf61e4cfc9f0bb9e769a814291ad4cdffac8168#npm:0.28.0"],
+            ["windicss", "npm:3.1.9"]
           ],
           "linkType": "SOFT",
         }]
@@ -86,6 +92,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/@alloc-quick-lru-npm-5.2.0-eb83517088-bdc35758b5.zip/node_modules/@alloc/quick-lru/",
           "packageDependencies": [
             ["@alloc/quick-lru", "npm:5.2.0"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
+      ["@antfu/utils", [
+        ["npm:0.1.7", {
+          "packageLocation": "./.yarn/cache/@antfu-utils-npm-0.1.7-4d1bc14c4b-a4b704c2e5.zip/node_modules/@antfu/utils/",
+          "packageDependencies": [
+            ["@antfu/utils", "npm:0.1.7"]
           ],
           "linkType": "HARD",
         }]
@@ -8811,6 +8826,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "HARD",
         }]
       ]],
+      ["@vue/devtools-api", [
+        ["npm:6.0.0-beta.19", {
+          "packageLocation": "./.yarn/cache/@vue-devtools-api-npm-6.0.0-beta.19-c8d7abb885-2eecb70965.zip/node_modules/@vue/devtools-api/",
+          "packageDependencies": [
+            ["@vue/devtools-api", "npm:6.0.0-beta.19"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
       ["@vue/reactivity", [
         ["npm:3.2.19", {
           "packageLocation": "./.yarn/cache/@vue-reactivity-npm-3.2.19-eb73d92971-e26769406b.zip/node_modules/@vue/reactivity/",
@@ -9141,6 +9165,22 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@webassemblyjs/ast", "npm:1.9.0"],
             ["@webassemblyjs/wast-parser", "npm:1.9.0"],
             ["@xtuc/long", "npm:4.2.2"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
+      ["@windicss/plugin-utils", [
+        ["npm:0.16.7", {
+          "packageLocation": "./.yarn/cache/@windicss-plugin-utils-npm-0.16.7-bc2a8cc9cc-0df8896c83.zip/node_modules/@windicss/plugin-utils/",
+          "packageDependencies": [
+            ["@windicss/plugin-utils", "npm:0.16.7"],
+            ["@antfu/utils", "npm:0.1.7"],
+            ["debug", "virtual:904b3fada4a3265c4dfeed8c42d6542b5b497582d17441c86eea102109bfc3b9e1825aad904bc43dd1b94603ff4820b8cb2ebcf24cfbaf45ecee04e5bc1076b8#npm:4.3.2"],
+            ["fast-glob", "npm:3.2.7"],
+            ["jiti", "npm:1.12.6"],
+            ["magic-string", "npm:0.25.7"],
+            ["micromatch", "npm:4.0.4"],
+            ["windicss", "npm:3.1.9"]
           ],
           "linkType": "HARD",
         }]
@@ -14133,6 +14173,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "HARD",
         }]
       ]],
+      ["exit-hook", [
+        ["npm:2.2.1", {
+          "packageLocation": "./.yarn/cache/exit-hook-npm-2.2.1-c030fd7edc-1aa8359b6c.zip/node_modules/exit-hook/",
+          "packageDependencies": [
+            ["exit-hook", "npm:2.2.1"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
       ["expand-brackets", [
         ["npm:2.1.4", {
           "packageLocation": "./.yarn/cache/expand-brackets-npm-2.1.4-392c703c48-1781d422e7.zip/node_modules/expand-brackets/",
@@ -14295,7 +14344,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["eslint-plugin-vue", "virtual:eb50b6e47afb688cbdaba3114186eca7b16f63be5d1995e714539e556909daf5f08f8effcecc84c509396018fbf61e4cfc9f0bb9e769a814291ad4cdffac8168#npm:7.19.1"],
             ["eslint-plugin-vue-a11y", "virtual:eb50b6e47afb688cbdaba3114186eca7b16f63be5d1995e714539e556909daf5f08f8effcecc84c509396018fbf61e4cfc9f0bb9e769a814291ad4cdffac8168#npm:0.0.31"],
             ["nyc", "npm:15.1.0"],
+            ["postcss", "npm:8.3.9"],
+            ["postcss-windicss", "virtual:eb50b6e47afb688cbdaba3114186eca7b16f63be5d1995e714539e556909daf5f08f8effcecc84c509396018fbf61e4cfc9f0bb9e769a814291ad4cdffac8168#npm:1.0.0"],
             ["prettier", "npm:2.4.1"],
+            ["pug", "npm:3.0.2"],
             ["sass", "npm:1.42.1"],
             ["start-server-and-test", "npm:1.14.0"],
             ["storybook-builder-vite", "virtual:eb50b6e47afb688cbdaba3114186eca7b16f63be5d1995e714539e556909daf5f08f8effcecc84c509396018fbf61e4cfc9f0bb9e769a814291ad4cdffac8168#npm:0.1.0"],
@@ -14304,11 +14356,14 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["typescript", "patch:typescript@npm%3A4.4.3#~builtin<compat/typescript>::version=4.4.3&hash=32657b"],
             ["vite", "virtual:eb50b6e47afb688cbdaba3114186eca7b16f63be5d1995e714539e556909daf5f08f8effcecc84c509396018fbf61e4cfc9f0bb9e769a814291ad4cdffac8168#npm:2.6.5"],
             ["vite-plugin-istanbul", "npm:2.2.1"],
+            ["vite-plugin-pug", "virtual:eb50b6e47afb688cbdaba3114186eca7b16f63be5d1995e714539e556909daf5f08f8effcecc84c509396018fbf61e4cfc9f0bb9e769a814291ad4cdffac8168#npm:0.3.0"],
             ["vscode-languageserver-textdocument", "npm:1.0.2"],
             ["vue", "npm:3.2.19"],
             ["vue-eslint-parser", "virtual:eb50b6e47afb688cbdaba3114186eca7b16f63be5d1995e714539e556909daf5f08f8effcecc84c509396018fbf61e4cfc9f0bb9e769a814291ad4cdffac8168#npm:7.11.0"],
             ["vue-loader", "virtual:eb50b6e47afb688cbdaba3114186eca7b16f63be5d1995e714539e556909daf5f08f8effcecc84c509396018fbf61e4cfc9f0bb9e769a814291ad4cdffac8168#npm:16.8.1"],
-            ["vue-tsc", "virtual:eb50b6e47afb688cbdaba3114186eca7b16f63be5d1995e714539e556909daf5f08f8effcecc84c509396018fbf61e4cfc9f0bb9e769a814291ad4cdffac8168#npm:0.28.0"]
+            ["vue-router", "virtual:eb50b6e47afb688cbdaba3114186eca7b16f63be5d1995e714539e556909daf5f08f8effcecc84c509396018fbf61e4cfc9f0bb9e769a814291ad4cdffac8168#npm:4.0.11"],
+            ["vue-tsc", "virtual:eb50b6e47afb688cbdaba3114186eca7b16f63be5d1995e714539e556909daf5f08f8effcecc84c509396018fbf61e4cfc9f0bb9e769a814291ad4cdffac8168#npm:0.28.0"],
+            ["windicss", "npm:3.1.9"]
           ],
           "linkType": "SOFT",
         }]
@@ -17154,6 +17209,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@types/node", "npm:16.10.3"],
             ["merge-stream", "npm:2.0.0"],
             ["supports-color", "npm:7.2.0"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
+      ["jiti", [
+        ["npm:1.12.6", {
+          "packageLocation": "./.yarn/cache/jiti-npm-1.12.6-55cd158789-6d5c0be356.zip/node_modules/jiti/",
+          "packageDependencies": [
+            ["jiti", "npm:1.12.6"]
           ],
           "linkType": "HARD",
         }]
@@ -20082,6 +20146,33 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/postcss-value-parser-npm-4.1.0-4620e3e849-68a9ea27c7.zip/node_modules/postcss-value-parser/",
           "packageDependencies": [
             ["postcss-value-parser", "npm:4.1.0"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
+      ["postcss-windicss", [
+        ["npm:1.0.0", {
+          "packageLocation": "./.yarn/cache/postcss-windicss-npm-1.0.0-3faaf2eefa-53c4b7c2b5.zip/node_modules/postcss-windicss/",
+          "packageDependencies": [
+            ["postcss-windicss", "npm:1.0.0"]
+          ],
+          "linkType": "SOFT",
+        }],
+        ["virtual:eb50b6e47afb688cbdaba3114186eca7b16f63be5d1995e714539e556909daf5f08f8effcecc84c509396018fbf61e4cfc9f0bb9e769a814291ad4cdffac8168#npm:1.0.0", {
+          "packageLocation": "./.yarn/__virtual__/postcss-windicss-virtual-aa25b66f62/0/cache/postcss-windicss-npm-1.0.0-3faaf2eefa-53c4b7c2b5.zip/node_modules/postcss-windicss/",
+          "packageDependencies": [
+            ["postcss-windicss", "virtual:eb50b6e47afb688cbdaba3114186eca7b16f63be5d1995e714539e556909daf5f08f8effcecc84c509396018fbf61e4cfc9f0bb9e769a814291ad4cdffac8168#npm:1.0.0"],
+            ["@types/postcss", null],
+            ["@windicss/plugin-utils", "npm:0.16.7"],
+            ["chokidar", "npm:3.5.2"],
+            ["debug", "virtual:904b3fada4a3265c4dfeed8c42d6542b5b497582d17441c86eea102109bfc3b9e1825aad904bc43dd1b94603ff4820b8cb2ebcf24cfbaf45ecee04e5bc1076b8#npm:4.3.2"],
+            ["exit-hook", "npm:2.2.1"],
+            ["postcss", "npm:8.3.9"],
+            ["windicss", "npm:3.1.9"]
+          ],
+          "packagePeers": [
+            "@types/postcss",
+            "postcss"
           ],
           "linkType": "HARD",
         }]
@@ -24663,6 +24754,29 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "HARD",
         }]
       ]],
+      ["vite-plugin-pug", [
+        ["npm:0.3.0", {
+          "packageLocation": "./.yarn/cache/vite-plugin-pug-npm-0.3.0-a0b9e41c17-54080775fc.zip/node_modules/vite-plugin-pug/",
+          "packageDependencies": [
+            ["vite-plugin-pug", "npm:0.3.0"]
+          ],
+          "linkType": "SOFT",
+        }],
+        ["virtual:eb50b6e47afb688cbdaba3114186eca7b16f63be5d1995e714539e556909daf5f08f8effcecc84c509396018fbf61e4cfc9f0bb9e769a814291ad4cdffac8168#npm:0.3.0", {
+          "packageLocation": "./.yarn/__virtual__/vite-plugin-pug-virtual-7231dc494c/0/cache/vite-plugin-pug-npm-0.3.0-a0b9e41c17-54080775fc.zip/node_modules/vite-plugin-pug/",
+          "packageDependencies": [
+            ["vite-plugin-pug", "virtual:eb50b6e47afb688cbdaba3114186eca7b16f63be5d1995e714539e556909daf5f08f8effcecc84c509396018fbf61e4cfc9f0bb9e769a814291ad4cdffac8168#npm:0.3.0"],
+            ["@types/vite", null],
+            ["pug", "npm:3.0.2"],
+            ["vite", "virtual:eb50b6e47afb688cbdaba3114186eca7b16f63be5d1995e714539e556909daf5f08f8effcecc84c509396018fbf61e4cfc9f0bb9e769a814291ad4cdffac8168#npm:2.6.5"]
+          ],
+          "packagePeers": [
+            "@types/vite",
+            "vite"
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
       ["vm-browserify", [
         ["npm:1.1.2", {
           "packageLocation": "./.yarn/cache/vm-browserify-npm-1.1.2-f96404b36f-10a1c50aab.zip/node_modules/vm-browserify/",
@@ -25054,6 +25168,29 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "HARD",
         }]
       ]],
+      ["vue-router", [
+        ["npm:4.0.11", {
+          "packageLocation": "./.yarn/cache/vue-router-npm-4.0.11-4caea6b4a0-0b78314daf.zip/node_modules/vue-router/",
+          "packageDependencies": [
+            ["vue-router", "npm:4.0.11"]
+          ],
+          "linkType": "SOFT",
+        }],
+        ["virtual:eb50b6e47afb688cbdaba3114186eca7b16f63be5d1995e714539e556909daf5f08f8effcecc84c509396018fbf61e4cfc9f0bb9e769a814291ad4cdffac8168#npm:4.0.11", {
+          "packageLocation": "./.yarn/__virtual__/vue-router-virtual-9d1bd84856/0/cache/vue-router-npm-4.0.11-4caea6b4a0-0b78314daf.zip/node_modules/vue-router/",
+          "packageDependencies": [
+            ["vue-router", "virtual:eb50b6e47afb688cbdaba3114186eca7b16f63be5d1995e714539e556909daf5f08f8effcecc84c509396018fbf61e4cfc9f0bb9e769a814291ad4cdffac8168#npm:4.0.11"],
+            ["@types/vue", null],
+            ["@vue/devtools-api", "npm:6.0.0-beta.19"],
+            ["vue", "npm:3.2.19"]
+          ],
+          "packagePeers": [
+            "@types/vue",
+            "vue"
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
       ["vue-tsc", [
         ["npm:0.28.0", {
           "packageLocation": "./.yarn/cache/vue-tsc-npm-0.28.0-f9cf1e657f-244ca554a9.zip/node_modules/vue-tsc/",
@@ -25384,6 +25521,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageDependencies": [
             ["widest-line", "npm:3.1.0"],
             ["string-width", "npm:4.2.3"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
+      ["windicss", [
+        ["npm:3.1.9", {
+          "packageLocation": "./.yarn/cache/windicss-npm-3.1.9-46ddc01f5f-7c9c1ac23b.zip/node_modules/windicss/",
+          "packageDependencies": [
+            ["windicss", "npm:3.1.9"]
           ],
           "linkType": "HARD",
         }]
