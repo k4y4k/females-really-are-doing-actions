@@ -23,4 +23,12 @@ describe('the extended bar', () => {
   it('has at least one thing to say', () => {
     cy.get('[data-testid=info-expanded]').contains('p')
   })
+
+  it('features the wider compendium', () => {
+    cy.get('[data-testid=info-more-from]')
+      .get('h2')
+      .contains('ALSO FROM 💌 ECTOPLASM ROMANCE:')
+
+    cy.get('[data-testid=rogues-gallery]').children().should('have.length', '3')
+  })
 })
