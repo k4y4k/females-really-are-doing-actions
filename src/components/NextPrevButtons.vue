@@ -3,6 +3,10 @@ button(data-testid="left-button").left-button 🧶 dimension-hopping yarn cowgir
 button(data-testid="right-button").right-button 📚️ birds of a feather
 </template>
 
+<script lang="ts">
+export default {}
+</script>
+
 <style lang="scss" scoped>
 button {
   @apply hover:bg-white hover:text-black bg-black text-white px-4 mb-3;

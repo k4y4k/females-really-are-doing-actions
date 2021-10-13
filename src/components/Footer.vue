@@ -5,8 +5,13 @@ footer
     br
     p.important Any resemblance to actual persons, living or dead, or actual events is purely coincidental.
     hr
-    p (c) 2015 - ­{{ new Date().getFullYear() }} @nvrbovr
+    p (c) ­2021 @nvrbovr
 </template>
+
+<script lang="ts">
+// empty export to satisfy tests
+export default {}
+</script>
 
 <style lang="scss" scoped>
 footer {
