@@ -5,7 +5,7 @@ footer
     br
     p.important Any resemblance to actual persons, living or dead, or actual events is purely coincidental.
     hr
-    p (c) ­2021 @nvrbovr
+    p Images (c) ­2021 @nvrbovr@mastodon.art.
 </template>
 
 <script lang="ts">

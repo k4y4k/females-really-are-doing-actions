@@ -12,5 +12,5 @@ it('shows the footer', () => {
     .contains('Any resemblance to actual persons,')
 
   // Check for ownership
-  cy.get('p:last-of-type').contains('(c) 2015 - ­2021 @nvrbovr')
+  cy.get('p:last-of-type').contains('Images (c) ­2021 @nvrbovr@mastodon.art.')
 })
