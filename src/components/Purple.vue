@@ -9,6 +9,8 @@ div.container
 
 Whobar
 
+Footer
+
 </template>
 
 <script lang="ts">
@@ -17,9 +19,10 @@ import Nav from './Nav.vue'
 import imgUrl from '../img/export/Purple.png'
 import Whobar from './Whobar.vue'
 import NextPrevButtons from './NextPrevButtons.vue'
+import Footer from './Footer.vue'
 
 export default {
-  components: { Nav, Whobar, NextPrevButtons },
+  components: { Nav, Whobar, NextPrevButtons, Footer },
   computed: {
     imageUrl: () => imgUrl,
   },
@@ -42,7 +45,7 @@ export default {
 }
 
 .container {
-  height: 87vh;
+  height: 85vh;
   display: flex;
   flex-wrap: wrap;
   width: 80vw;

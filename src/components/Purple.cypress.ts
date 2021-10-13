@@ -13,4 +13,9 @@ it('has an image and the name in the background', () => {
 it('has the navbar and the information bar', () => {
   cy.get('nav h1').contains('Complex Compendium')
   cy.get('[data-testid=info-bar]').contains('PURPLE')
+  cy.get('[data-testid=left-button]')
+})
+
+it('has the footer', () => {
+  cy.get('footer').contains('This is a work of fiction.')
 })
