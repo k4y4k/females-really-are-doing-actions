@@ -1,8 +1,8 @@
 <template lang="pug">
 section.w-full.bg-black.text-white.py-1.monospace(data-testid="info-bar")
   aside.my-3
-    span( id="who-icon").w-10.inline-block.mx-5.h-auto 💌
-    p.tracking-widest.inline-block {{ uppercase }}
+    span(data-testid="who-icon" id="who-icon").w-10.inline-block.mx-5.h-auto 💌
+    p(data-testid="who-name" id="who-name").tracking-widest.inline-block {{ uppercase }}
 
 div(data-testid="info-expanded" id="info-expanded").my-8.bg-black.text-white.py-3
   p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam a tincidunt tortor. Vestibulum at fringilla augue, et condimentum neque. Donec sed porta lacus. Suspendisse fringilla a odio et eleifend. Donec vitae metus et mi ultrices mattis. Sed interdum diam et est fermentum, ac bibendum lorem tincidunt. Praesent auctor tortor felis, vitae pulvinar dolor blandit id.
