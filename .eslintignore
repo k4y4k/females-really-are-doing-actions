@@ -6,3 +6,4 @@ coverage
 src/stories/
 .nyc_output
 src/img
+storybook-static

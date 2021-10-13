@@ -19,3 +19,5 @@ coverage
 src/img
 # cypress takes screencaps on test failure
 cypress/screenshots
+
+storybook-static
